@@ -1,0 +1,34 @@
+{
+    "Teams": [
+        {
+            "Players": "Ugo/MAX",
+            "stillingame": "True",
+            "uniqueid": 1
+        },
+        {
+            "Players": "Jason/willy",
+            "stillingame": "True",
+            "uniqueid": 2
+        },
+        {
+            "Players": "Jason/mat",
+            "stillingame": "True",
+            "uniqueid": 3
+        },
+        {
+            "Players": "Jason/siargao",
+            "stillingame": "True",
+            "uniqueid": 4
+        },
+        {
+            "Players": "Jason/willy",
+            "stillingame": "True",
+            "uniqueid": 5
+        },
+        {
+            "Players": "Jason/willy",
+            "stillingame": "True",
+            "uniqueid": 6
+        }
+    ]
+}

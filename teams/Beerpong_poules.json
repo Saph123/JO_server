@@ -1,0 +1,112 @@
+{
+    "groups": [
+        {
+            "name": "A",
+            "teams": [
+                {
+                    "name": "ugo/fdp",
+                    "wins": 0,
+                    "played": 0,
+                    "loses": 0
+                },
+                {
+                    "name": "ugo/fdp",
+                    "wins": 0,
+                    "played": 0,
+                    "loses": 0
+                },
+                {
+                    "name": "ugo/fdp",
+                    "wins": 0,
+                    "played": 0,
+                    "loses": 0
+                },
+                {
+                    "name": "ugo/fdp",
+                    "wins": 0,
+                    "played": 0,
+                    "loses": 0
+                }
+            ],
+            "over": 0,
+            "level": 0,
+            "team_number": 4,
+            "matches": [
+                {
+                    "match": 1,
+                    "team1": "Ugo / MAX",
+                    "team2": "Jason / willy",
+                    "score": "0:0",
+                    "over": 0,
+                    "level": 0
+                },
+                {
+                    "match": 2,
+                    "team1": "Ugo / test",
+                    "team2": "Jason / fdp",
+                    "score": "1:0",
+                    "over": 1,
+                    "level": 0
+                },
+                {
+                    "match": 3,
+                    "team1": "haha / mams",
+                    "team2": "tasoeur / fdp",
+                    "score": "0:0",
+                    "over": 2,
+                    "level": 0
+                }
+            ]
+        },
+        {
+            "name": "B",
+            "teams": [
+                {
+                    "name": "ugo/fdp2",
+                    "wins": 0,
+                    "played": 0,
+                    "loses": 0
+                },
+                {
+                    "name": "max/fdp2",
+                    "wins": 0,
+                    "played": 0,
+                    "loses": 0
+                },
+                {
+                    "name": "max/fdp2",
+                    "wins": 0,
+                    "played": 0,
+                    "loses": 0
+                },
+                {
+                    "name": "mams/fdp2",
+                    "wins": 0,
+                    "played": 0,
+                    "loses": 0
+                }
+            ],
+            "over": 0,
+            "level": 0,
+            "team_number": 4,
+            "matches": [
+                {
+                    "match": 4,
+                    "team1": "Ugo / cha",
+                    "team2": "Jason / charl",
+                    "score": "0:0",
+                    "over": 0,
+                    "level": 0
+                },
+                {
+                    "match": 5,
+                    "team1": "Ugo / MAX",
+                    "team2": "Jason / willy",
+                    "score": "0:0",
+                    "over": 0,
+                    "level": 0
+                }
+            ]
+        }
+    ]
+}
