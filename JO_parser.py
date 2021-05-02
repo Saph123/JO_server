@@ -1,5 +1,4 @@
 import os
-import win32com.client
 import hashlib
 import subprocess
 import re
@@ -10,7 +9,7 @@ import datetime
 import time
 import json
 
-excel_sheet = pd.read_excel(os.path.join(os.getcwd()+"/JO_2020.xlsx"), sheet_name=None)
+excel_sheet = pd.read_excel(os.path.join(os.getcwd()+"/JO_2020.xlsx"), sheet_name=None, engine="openpyxl")
 matches = dict()
 matches["matches"] = []
 match = dict()
@@ -19,14 +18,14 @@ for sheet in excel_sheet:
     if "ventriglisse" in sheet:
         print(type(excel_sheet[sheet]))
         for row in excel_sheet[sheet]:
-            print str(row)
+            print(str(row))
             if "equipe" in str(row):
                 equipe_ventriglisse.append(str(row))
-        arbitre = excel_sheet[sheet].loc[:,"arbitre"].to_string(index=False).replace("NaN","").replace("\n","/").replace("  ","").replace("/ /","")[:-2]
+        arbitre = str(excel_sheet[sheet].loc[:,"arbitre"], encoding="utf-16").replace("NaN","").replace("\n","/").replace("  ","").replace("/ /","")[:-2]
         for index,equipe in enumerate(equipe_ventriglisse):
-            print equipe
+            print(equipe)
             # team = ""
-            team = excel_sheet[sheet].loc[:,equipe].to_string(index=False).replace("NaN","").replace("\n","/").replace("  ","")
+            team = str(excel_sheet[sheet].loc[:,equipe], encoding="utf-16").replace("NaN","").replace("\n","/").replace("  ","")
             equipe_ventriglisse[index]=team
 
         for i in range(0, len(equipe_ventriglisse), 2):
