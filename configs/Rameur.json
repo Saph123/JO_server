@@ -1,8 +1,7 @@
 {
     "Total time": 120,
     "Time per match": 10,
-    "Min players per team": 2,
-    "Max players per team": 2,
+    "Wanted players per team": 2,
     "Simultanous matches": 1,
     "Table/Pool/Both/None": 3,
     "Teams per match": 1
