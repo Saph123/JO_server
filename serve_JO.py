@@ -13,8 +13,8 @@ root_dir = "/var/www/html/JO"
 
 try:
     conn = mariadb.connect(
-        user="max",
-        password="analu811",
+        user="JO",
+        password="kekw123",
         # host="192.0.2.1",
         # port=3306,
         database="JO"
