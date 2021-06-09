@@ -9,14 +9,12 @@ import simplejson
 import time    
 import json
 import hashlib
-root_dir = "/var/www/html/JO"
+root_dir = "/home/JO"
 
 try:
     conn = mariadb.connect(
-        user="JO",
-        password="kekw123",
-        # host="192.0.2.1",
-        # port=3306,
+        user="root",
+#        password=""
         database="JO"
 
     )
