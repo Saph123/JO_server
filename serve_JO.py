@@ -7,6 +7,7 @@ import socket
 import mariadb
 import simplejson
 import time    
+import json
 import hashlib
 root_dir = "/var/www/html/JO"
 
@@ -43,6 +44,7 @@ class myHandler (BaseHTTPRequestHandler):
     def do_POST(self):
         content_length = int(self.headers['Content-Length']) # <--- Gets the size of data
         post_data = self.rfile.read(int(content_length)) # <--- Gets the data itself
+        print (self.path)
         # self.send_header("Access-Control-Allow-Headers","*")
         if "login" in self.path:
             tmpdict = simplejson.loads("{"+str(post_data).split("{")[1].split("}")[0]+"}")
@@ -80,6 +82,11 @@ class myHandler (BaseHTTPRequestHandler):
                 # self.send_response(403,"Login exists already my friend")
             self.send_header("Access-Control-Allow-Origin","*")
             self.end_headers()
+        elif "pushmatch" in self.path:
+            print(str(post_data))
+            print(json.loads(str(post_data)))
+            # tmpdict = simplejson.loads("{"+str(post_data).split("{")[1].split("}")[0]+"}")
+            print (tmpdict)
         # self.wfile.write("")
         return
 
