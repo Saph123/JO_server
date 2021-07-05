@@ -96,3 +96,22 @@ def get_boobs_number(athletes):
         if athlete["Sexe"] == "F":
             boobs_number += 2
     return boobs_number
+
+
+def concatenate_players(excel_sheet, column_name):
+    concat_str = ""
+    for player in excel_sheet[column_name]:
+        concat_str += f"{player}/"
+    concat_str = concat_str[:-1]
+    return concat_str
+
+
+def generate_table(teams, teams_per_match):
+    nbr_of_teams = len(teams)
+    print(nbr_of_teams)
+    levels = int(nbr_of_teams**(1/teams_per_match) +0.5)
+    print(levels)
+    nbr_of_matchs = int(nbr_of_teams/teams_per_match) + (1 if nbr_of_teams%teams_per_match else 0)
+    print(nbr_of_matchs)
+    max_nbr_of_matchs = teams_per_match ** (levels - 1)
+    print(max_nbr_of_matchs)

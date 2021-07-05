@@ -1,0 +1,35 @@
+{
+    "Teams": [{
+        "stillingame": "True",
+        "uniqueid": 1,
+        "Players": "Gratiant Chloé /Aurore/José/La Guille/Del Cerro Mathias"
+    }, {
+        "stillingame": "True",
+        "uniqueid": 1,
+        "Players": "Vallon Alice/Mailys/Nisbav/Florent/Pierrick"
+    }, {
+        "stillingame": "True",
+        "uniqueid": 1,
+        "Players": "Fourot Charlene/Marie Eyraud/Kha Zed/Mureddu Antoine/Vinot Thomas"
+    }, {
+        "stillingame": "True",
+        "uniqueid": 1,
+        "Players": "Bouchon Gaëlle/Grosset Sarah/Mathieu Brun/Lavanant Mathieu/Patrice"
+    }, {
+        "stillingame": "True",
+        "uniqueid": 1,
+        "Players": "Gomar/Coulouvrat Carol-Ann/Mam's dibartouz/Werner Jolan/Mic (Bifsteak pour les intimes) "
+    }, {
+        "stillingame": "True",
+        "uniqueid": 1,
+        "Players": "Sophie/Marianne Chevenet/Alexandre Garcia/Alexis Jeannot Lapinou/Ggy"
+    }, {
+        "stillingame": "True",
+        "uniqueid": 1,
+        "Players": "Elisa/Perrotta kevin/Willy/couvreur antoine/Brice Colombier"
+    }, {
+        "stillingame": "True",
+        "uniqueid": 1,
+        "Players": "Alissone Mounier /Girexlekent /Ugo/Jerome Brunel/nan"
+    }]
+}

@@ -16,6 +16,7 @@
     "Course d'orientation" : "Orientation.json",
     "Krossfit" : "Krossfit.json",
     "Concours de pizza" : "Pizza.json",
-    "Concours de gros cuissots" : "Cuissots.json",
-    "Maximum de distance au rameur en équipe" : "Rameur.json"
+    "Maximum de distance au rameur en équipe" : "Rameur.json",
+    "Molky" : "Molky.json",
+    "Natation Synchronisée" : "Natation.json"
 }
