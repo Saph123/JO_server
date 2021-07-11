@@ -44,3 +44,6 @@ for sport_name in sports_name:
         print(sport_name)
         teams_per_match = sport_config["Teams per match"]
         table = generate_table(teams_list["Teams"], teams_per_match)
+        file_name = file_name[:-5] + "_playoff.json"
+        with open(f"teams/{file_name}", "w") as file:
+            json.dump(table, file, ensure_ascii=False)

@@ -108,10 +108,40 @@ def concatenate_players(excel_sheet, column_name):
 
 def generate_table(teams, teams_per_match):
     nbr_of_teams = len(teams)
-    print(nbr_of_teams)
-    levels = int(nbr_of_teams**(1/teams_per_match) +0.5)
-    print(levels)
+    print(f'teams: {nbr_of_teams}')
     nbr_of_matchs = int(nbr_of_teams/teams_per_match) + (1 if nbr_of_teams%teams_per_match else 0)
-    print(nbr_of_matchs)
-    max_nbr_of_matchs = teams_per_match ** (levels - 1)
-    print(max_nbr_of_matchs)
+    print(f'matchs: {nbr_of_matchs}')
+    levels = 0
+    matchs = 1
+    while matchs < nbr_of_matchs:
+        levels += 1
+        matchs *= 2
+    print(f'levels: {levels}')
+    max_nbr_of_matchs = 2**levels
+    print(f'max matchs: {max_nbr_of_matchs}')
+    start_id = 1
+    end_id = max_nbr_of_matchs + 1
+    table = dict(matches=[])
+    for level in range(levels + 1):
+        for unique_id in range(start_id, end_id):
+            next_match_id = int((unique_id + 2 - start_id) / 2) + end_id -1
+            match_part = "A" if unique_id % 2 else "B"
+            next_match = "" if level == levels else f"{next_match_id}:{match_part}"
+            match_dict = dict(uniqueId=unique_id, team1="", team2="", score="0:0", over=0, level=level, nextmatch=next_match)
+            table["matches"].append(match_dict)
+        start_id = end_id
+        max_nbr_of_matchs /= 2
+        end_id += int(max_nbr_of_matchs)
+    unique_id = 1
+    team_number = 1
+    max_nbr_of_matchs = 2**levels
+    for team in teams:
+        for match_dict in table["matches"]:
+            if match_dict["uniqueId"] == unique_id:
+                print(unique_id)
+                match_dict[f'team{team_number}'] = team["Players"]
+        unique_id += 1
+        if unique_id > max_nbr_of_matchs:
+            team_number = 2
+            unique_id = 1
+    return table 
