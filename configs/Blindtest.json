@@ -1,8 +1,5 @@
 {
-    "Total time": 90,
-    "Time per match": 10,
     "Wanted teams": 2,
-    "Simultanous matches": 2,
-    "Table/Pool/Both/None": 3,
+    "Table/Pool/Both/None": 0,
     "Teams per match": 2
 }

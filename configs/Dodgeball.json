@@ -1,9 +1,6 @@
 {
-    "Total time": 180,
-    "Time per match": 10,
     "Wanted players per team": 4,
     "Accepted players per team": 5,
-    "Simultanous matches": 1,
     "Table/Pool/Both/None": 1,
     "Teams per match": 2
 }
