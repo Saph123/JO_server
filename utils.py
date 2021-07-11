@@ -138,10 +138,15 @@ def generate_table(teams, teams_per_match):
     for team in teams:
         for match_dict in table["matches"]:
             if match_dict["uniqueId"] == unique_id:
-                print(unique_id)
                 match_dict[f'team{team_number}'] = team["Players"]
         unique_id += 1
         if unique_id > max_nbr_of_matchs:
             team_number = 2
             unique_id = 1
-    return table 
+    
+    for match_dict in table["matches"]:
+        if match_dict["level"] == 1:
+            break
+        if not match_dict["team2"]:
+            match_dict["over"] = 1
+    return table
