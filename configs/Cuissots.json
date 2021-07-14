@@ -3,6 +3,6 @@
     "Time per match": 30,
     "Wanted players per team": 1,
     "Simultanous matches": 1,
-    "Table/Pool/Both/None": 3,
+    "Type": "None",
     "Teams per match": 0
 }

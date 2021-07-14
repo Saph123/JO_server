@@ -1,6 +1,6 @@
 {
     "Wanted players per team": 2,
     "Accepted players per team": 1,
-    "Table/Pool/Both/None": 3,
+    "Type": "None",
     "Teams per match": 0
 }
