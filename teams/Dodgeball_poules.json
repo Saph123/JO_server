@@ -1,0 +1,101 @@
+{
+    "groups": [{
+        "name": "A",
+        "teams": [{
+            "name": "Bouchon Gaëlle/Brice Colombier/Perrotta kevin/Ugo/Willy/Florent",
+            "wins": 0,
+            "played": 0,
+            "loses": 0,
+            "points": 0,
+            "diff": 0
+        }, {
+            "name": "Mailys/couvreur antoine/La Guille/Vinot Thomas/Mic (Bifsteak pour les intimes) /nan",
+            "wins": 0,
+            "played": 0,
+            "loses": 0,
+            "points": 0,
+            "diff": 0
+        }, {
+            "name": "Gratiant Chloé /Adrien Voc/Alexandre Garcia/Cernesse Babouche/Boulbi/nan",
+            "wins": 0,
+            "played": 0,
+            "loses": 0,
+            "points": 0,
+            "diff": 0
+        }],
+        "over": 0,
+        "level": 0,
+        "team_number": 3,
+        "matches": [{
+            "uniqueId": 1,
+            "team1": "Bouchon Gaëlle/Brice Colombier/Perrotta kevin/Ugo/Willy/Florent",
+            "team2": "Mailys/couvreur antoine/La Guille/Vinot Thomas/Mic (Bifsteak pour les intimes) /nan",
+            "score": "0:0",
+            "over": 0,
+            "level": 0
+        }, {
+            "uniqueId": 2,
+            "team1": "Bouchon Gaëlle/Brice Colombier/Perrotta kevin/Ugo/Willy/Florent",
+            "team2": "Gratiant Chloé /Adrien Voc/Alexandre Garcia/Cernesse Babouche/Boulbi/nan",
+            "score": "0:0",
+            "over": 0,
+            "level": 0
+        }, {
+            "uniqueId": 3,
+            "team1": "Mailys/couvreur antoine/La Guille/Vinot Thomas/Mic (Bifsteak pour les intimes) /nan",
+            "team2": "Gratiant Chloé /Adrien Voc/Alexandre Garcia/Cernesse Babouche/Boulbi/nan",
+            "score": "0:0",
+            "over": 0,
+            "level": 0
+        }]
+    }, {
+        "name": "B",
+        "teams": [{
+            "name": "Fourot Charlene/Ggy/José/Mureddu Antoine/Del Cerro Mathias/nan",
+            "wins": 0,
+            "played": 0,
+            "loses": 0,
+            "points": 0,
+            "diff": 0
+        }, {
+            "name": "Alissone Mounier /Kha Zed/Werner Jolan/Pierrick/Girexlekent /nan",
+            "wins": 0,
+            "played": 0,
+            "loses": 0,
+            "points": 0,
+            "diff": 0
+        }, {
+            "name": "Coulouvrat Carol-Ann/besson maxime/Alexis Jeannot Lapinou/Mam's dibartouz/Nisbav/nan",
+            "wins": 0,
+            "played": 0,
+            "loses": 0,
+            "points": 0,
+            "diff": 0
+        }],
+        "over": 0,
+        "level": 0,
+        "team_number": 3,
+        "matches": [{
+            "uniqueId": 4,
+            "team1": "Fourot Charlene/Ggy/José/Mureddu Antoine/Del Cerro Mathias/nan",
+            "team2": "Alissone Mounier /Kha Zed/Werner Jolan/Pierrick/Girexlekent /nan",
+            "score": "0:0",
+            "over": 0,
+            "level": 0
+        }, {
+            "uniqueId": 5,
+            "team1": "Fourot Charlene/Ggy/José/Mureddu Antoine/Del Cerro Mathias/nan",
+            "team2": "Coulouvrat Carol-Ann/besson maxime/Alexis Jeannot Lapinou/Mam's dibartouz/Nisbav/nan",
+            "score": "0:0",
+            "over": 0,
+            "level": 0
+        }, {
+            "uniqueId": 6,
+            "team1": "Alissone Mounier /Kha Zed/Werner Jolan/Pierrick/Girexlekent /nan",
+            "team2": "Coulouvrat Carol-Ann/besson maxime/Alexis Jeannot Lapinou/Mam's dibartouz/Nisbav/nan",
+            "score": "0:0",
+            "over": 0,
+            "level": 0
+        }]
+    }]
+}

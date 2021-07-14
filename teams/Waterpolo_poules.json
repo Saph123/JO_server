@@ -1,0 +1,80 @@
+{
+    "groups": [{
+        "name": "A",
+        "teams": [{
+            "name": "Girexlekent /Vinot Thomas/Perrotta kevin/Mam's dibartouz",
+            "wins": 0,
+            "played": 0,
+            "loses": 0,
+            "points": 0,
+            "diff": 0
+        }, {
+            "name": "Jerome Brunel/Ugo/Alexandre Garcia/couvreur antoine",
+            "wins": 0,
+            "played": 0,
+            "loses": 0,
+            "points": 0,
+            "diff": 0
+        }, {
+            "name": "Alexis Jeannot Lapinou/Ggy/Mureddu Antoine/Mic (Bifsteak pour les intimes) ",
+            "wins": 0,
+            "played": 0,
+            "loses": 0,
+            "points": 0,
+            "diff": 0
+        }, {
+            "name": "Mrik Brown/José/Boulbi/besson maxime",
+            "wins": 0,
+            "played": 0,
+            "loses": 0,
+            "points": 0,
+            "diff": 0
+        }],
+        "over": 0,
+        "level": 0,
+        "team_number": 4,
+        "matches": [{
+            "uniqueId": 1,
+            "team1": "Girexlekent /Vinot Thomas/Perrotta kevin/Mam's dibartouz",
+            "team2": "Jerome Brunel/Ugo/Alexandre Garcia/couvreur antoine",
+            "score": "0:0",
+            "over": 0,
+            "level": 0
+        }, {
+            "uniqueId": 2,
+            "team1": "Girexlekent /Vinot Thomas/Perrotta kevin/Mam's dibartouz",
+            "team2": "Alexis Jeannot Lapinou/Ggy/Mureddu Antoine/Mic (Bifsteak pour les intimes) ",
+            "score": "0:0",
+            "over": 0,
+            "level": 0
+        }, {
+            "uniqueId": 3,
+            "team1": "Girexlekent /Vinot Thomas/Perrotta kevin/Mam's dibartouz",
+            "team2": "Mrik Brown/José/Boulbi/besson maxime",
+            "score": "0:0",
+            "over": 0,
+            "level": 0
+        }, {
+            "uniqueId": 4,
+            "team1": "Jerome Brunel/Ugo/Alexandre Garcia/couvreur antoine",
+            "team2": "Alexis Jeannot Lapinou/Ggy/Mureddu Antoine/Mic (Bifsteak pour les intimes) ",
+            "score": "0:0",
+            "over": 0,
+            "level": 0
+        }, {
+            "uniqueId": 5,
+            "team1": "Jerome Brunel/Ugo/Alexandre Garcia/couvreur antoine",
+            "team2": "Mrik Brown/José/Boulbi/besson maxime",
+            "score": "0:0",
+            "over": 0,
+            "level": 0
+        }, {
+            "uniqueId": 6,
+            "team1": "Alexis Jeannot Lapinou/Ggy/Mureddu Antoine/Mic (Bifsteak pour les intimes) ",
+            "team2": "Mrik Brown/José/Boulbi/besson maxime",
+            "score": "0:0",
+            "over": 0,
+            "level": 0
+        }]
+    }]
+}
