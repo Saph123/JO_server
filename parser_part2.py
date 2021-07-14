@@ -2,6 +2,7 @@ import json
 import os
 import pandas
 from utils import concatenate_players, get_file_name, get_sport_config, generate_table
+from utils import generate_pools
 
 path = os.path.join(os.getcwd()+"/JO_2020.xlsx")
 
@@ -40,10 +41,16 @@ for sport_name in sports_name:
     with open(f"teams/{file_name}", "w") as file:
         json.dump(teams_list, file, ensure_ascii=False)
     sport_config = get_sport_config(sport_name)
-    if sport_config["Table/Pool/Both/None"] == 0:
+    if sport_config["Type"] == "Table":
         print(sport_name)
         teams_per_match = sport_config["Teams per match"]
         table = generate_table(teams_list["Teams"], teams_per_match)
         file_name = file_name[:-5] + "_playoff.json"
         with open(f"teams/{file_name}", "w") as file:
             json.dump(table, file, ensure_ascii=False)
+    elif sport_config["Type"] == "Pool":
+        print(sport_name)
+        pools = generate_pools(teams_list["Teams"])
+        file_name = file_name[:-5] + "_poules.json"
+        with open(f"teams/{file_name}", "w") as file:
+            json.dump(pools, file, ensure_ascii=False)

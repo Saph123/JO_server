@@ -1,5 +1,6 @@
 import random
 import json
+import string
 
 def create_empty_dict(excel_sheet):
     athletes = dict()
@@ -150,3 +151,49 @@ def generate_table(teams, teams_per_match):
         if not match_dict["team2"]:
             match_dict["over"] = 1
     return table
+
+
+def generate_pools(teams):
+    pools = dict(groups=[])
+    nbr_of_teams = len(teams)
+    print(f"teams: {nbr_of_teams}")
+    if not nbr_of_teams % 4:
+        nbr_of_pools = int(nbr_of_teams / 4)
+    elif nbr_of_teams in (1, 2, 5):
+        nbr_of_pools = 1
+    else:
+        nbr_of_pools = int(nbr_of_teams / 3)
+        print(f"pools: {nbr_of_pools}")
+    for pool_name in string.ascii_uppercase[:nbr_of_pools]:
+        pool = dict(name=pool_name, teams=[], over=0, level=0, team_number=0, matches=[])
+        pools["groups"].append(pool)
+    team_nbr = 0
+    for team in teams:
+        team_dict = dict(name=team["Players"], wins=0, played=0, loses=0, points=0, diff=0)
+        for pool in pools["groups"]:
+            if pool["name"] == string.ascii_uppercase[team_nbr%nbr_of_pools]:
+                pool["teams"].append(team_dict)
+                pool["team_number"] +=1
+                break
+        team_nbr += 1
+    unique_id = 1
+    for pool in pools["groups"]:
+        for team_number in range(pool["team_number"] - 1):
+            team1 = pool["teams"][team_number]
+            for team2 in pool["teams"][team_number+1:]:
+                match_dict = dict(uniqueId=unique_id,
+                                  team1=team1["name"],
+                                  team2=team2["name"],
+                                  score="0:0",
+                                  over=0,
+                                  level=0)
+                pool["matches"].append(match_dict)
+                unique_id += 1
+    for pool in pools["groups"]:
+        print(f"poolname: {pool['name']}")
+        print(f"teams: {pool['team_number']}")
+        for team in pool["teams"]:
+            print(team)
+        for match in pool["matches"]:
+            print(match)
+    return pools
