@@ -134,7 +134,7 @@ def generate_table(teams, teams_per_match):
         start_id = end_id
         max_nbr_of_matchs /= 2
         end_id += int(max_nbr_of_matchs)
-    table["levels"] = levels
+    table["levels"] = levels + 1
     unique_id = 1
     team_number = 1
     max_nbr_of_matchs = 2**levels
