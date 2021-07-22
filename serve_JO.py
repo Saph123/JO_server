@@ -9,7 +9,7 @@ import simplejson
 import time    
 import json
 import hashlib
-root_dir = "/home/JO"
+root_dir = os.path.dirname(os.path.realpath(__file__))
 
 try:
     conn = mariadb.connect(

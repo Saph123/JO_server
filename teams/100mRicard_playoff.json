@@ -8,7 +8,7 @@
         "score": "0:0",
         "over": 0,
         "level": 0,
-        "nextmatch": "3:A"
+        "nextmatch": "3:A,3:B"
     }, {
         "uniqueId": 2,
         "team1": "Florent /Shmavosaure Brown",
@@ -18,14 +18,17 @@
         "score": "0:0",
         "over": 0,
         "level": 0,
-        "nextmatch": "3:B"
+        "nextmatch": "3:C,3:D"
     }, {
         "uniqueId": 3,
         "team1": "",
         "team2": "",
+        "team3": "",
+        "team4": "",
         "score": "0:0",
         "over": 0,
         "level": 1,
         "nextmatch": ""
-    }]
+    }],
+    "levels": 2
 }
