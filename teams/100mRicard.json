@@ -1,1 +1,35 @@
-{"Teams": [{"stillingame": "True", "uniqueid": 1, "Players": "Vallon Alice/Mureddu Antoine"}, {"stillingame": "True", "uniqueid": 2, "Players": "Mrik Brown/Ugo"}, {"stillingame": "True", "uniqueid": 3, "Players": "Mic (Bifsteak pour les intimes) /besson maxime"}, {"stillingame": "True", "uniqueid": 4, "Players": "Del Cerro Mathias/Florent"}, {"stillingame": "True", "uniqueid": 5, "Players": "Jerome Brunel/Perrotta kevin"}, {"stillingame": "True", "uniqueid": 6, "Players": "Girexlekent /nan"}]}
+{
+    "Teams": [{
+        "stillingame": "True",
+        "uniqueid": 1,
+        "Players": "Khaladji Emma/Maouhoub Quentin"
+    }, {
+        "stillingame": "True",
+        "uniqueid": 2,
+        "Players": "Florent /Shmavosaure Brown"
+    }, {
+        "stillingame": "True",
+        "uniqueid": 3,
+        "Players": "Sam Ahizi/Girex"
+    }, {
+        "stillingame": "True",
+        "uniqueid": 4,
+        "Players": "Corne Hugo/Del Cerro Mathias"
+    }, {
+        "stillingame": "True",
+        "uniqueid": 5,
+        "Players": "Besson maxime/Ugo"
+    }, {
+        "stillingame": "True",
+        "uniqueid": 6,
+        "Players": "Lavanant Mathieu/Faure Béranger "
+    }, {
+        "stillingame": "True",
+        "uniqueid": 7,
+        "Players": "Vice gros cuisseau /Tonton Toinou"
+    }, {
+        "stillingame": "True",
+        "uniqueid": 8,
+        "Players": "Guibra/Lapinou"
+    }]
+}

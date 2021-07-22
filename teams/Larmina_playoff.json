@@ -1,251 +1,123 @@
 {
     "matches": [{
         "uniqueId": 1,
-        "team1": "Alissone Mounier /Werner Jolan",
-        "team2": "Mureddu Antoine/La Guille",
+        "team1": "Gazou /Assidigbey Christophe",
+        "team2": "Werner Jolan/Vice gros cuisseau ",
         "score": "0:0",
         "over": 0,
         "level": 0,
-        "nextmatch": "17:A"
+        "nextmatch": "9:A"
     }, {
         "uniqueId": 2,
-        "team1": "Mailys/Mathieu Brun",
-        "team2": "",
+        "team1": "Inès Leduc/Willy",
+        "team2": "Ugo/Alexis Prompsaud",
         "score": "0:0",
-        "over": 1,
+        "over": 0,
         "level": 0,
-        "nextmatch": "17:B"
+        "nextmatch": "9:B"
     }, {
         "uniqueId": 3,
-        "team1": "Fourot Charlene/Nisbav",
-        "team2": "",
+        "team1": "Gratiant Chloé /José",
+        "team2": "Vinot Thomas/Shmavosaure Brown",
         "score": "0:0",
-        "over": 1,
+        "over": 0,
         "level": 0,
-        "nextmatch": "18:A"
+        "nextmatch": "10:A"
     }, {
         "uniqueId": 4,
-        "team1": "Vallon Alice/Alexandre Garcia",
-        "team2": "",
+        "team1": "Khaladji Emma/Pierrick",
+        "team2": "Lucas/Medrano Johan",
         "score": "0:0",
-        "over": 1,
+        "over": 0,
         "level": 0,
-        "nextmatch": "18:B"
+        "nextmatch": "10:B"
     }, {
         "uniqueId": 5,
-        "team1": "Marianne Chevenet/Brice Colombier",
-        "team2": "",
+        "team1": "Charlène Fourot /Maouhoub Quentin",
+        "team2": "Lapinou/Del Cerro Mathias",
         "score": "0:0",
-        "over": 1,
+        "over": 0,
         "level": 0,
-        "nextmatch": "19:A"
+        "nextmatch": "11:A"
     }, {
         "uniqueId": 6,
-        "team1": "Gratiant Chloé /Mic (Bifsteak pour les intimes) ",
-        "team2": "",
+        "team1": "Babouche /Guibra",
+        "team2": "Brice/La Guille",
         "score": "0:0",
-        "over": 1,
+        "over": 0,
         "level": 0,
-        "nextmatch": "19:B"
+        "nextmatch": "11:B"
     }, {
         "uniqueId": 7,
-        "team1": "Coulouvrat Carol-Ann/Patrice",
-        "team2": "",
+        "team1": "Tonton Toinou/Besson maxime",
+        "team2": "Lavanant Mathieu/Chataignon Mickael",
         "score": "0:0",
-        "over": 1,
+        "over": 0,
         "level": 0,
-        "nextmatch": "20:A"
+        "nextmatch": "12:A"
     }, {
         "uniqueId": 8,
-        "team1": "Bouchon Gaëlle/Mam's dibartouz",
+        "team1": "Sam Ahizi/Girex",
         "team2": "",
         "score": "0:0",
         "over": 1,
         "level": 0,
-        "nextmatch": "20:B"
+        "nextmatch": "12:B"
     }, {
         "uniqueId": 9,
-        "team1": "Sophie/Girexlekent ",
+        "team1": "",
         "team2": "",
         "score": "0:0",
-        "over": 1,
-        "level": 0,
-        "nextmatch": "21:A"
+        "over": 0,
+        "level": 1,
+        "nextmatch": "13:A"
     }, {
         "uniqueId": 10,
-        "team1": "Elisa/Alexis Jeannot Lapinou",
+        "team1": "",
         "team2": "",
         "score": "0:0",
-        "over": 1,
-        "level": 0,
-        "nextmatch": "21:B"
+        "over": 0,
+        "level": 1,
+        "nextmatch": "13:B"
     }, {
         "uniqueId": 11,
-        "team1": "couvreur antoine/Pierrick",
+        "team1": "",
         "team2": "",
         "score": "0:0",
-        "over": 1,
-        "level": 0,
-        "nextmatch": "22:A"
+        "over": 0,
+        "level": 1,
+        "nextmatch": "14:A"
     }, {
         "uniqueId": 12,
-        "team1": "Perrotta kevin/besson maxime",
+        "team1": "",
         "team2": "",
         "score": "0:0",
-        "over": 1,
-        "level": 0,
-        "nextmatch": "22:B"
+        "over": 0,
+        "level": 1,
+        "nextmatch": "14:B"
     }, {
         "uniqueId": 13,
-        "team1": "Adrien Voc/Del Cerro Mathias",
+        "team1": "",
         "team2": "",
         "score": "0:0",
-        "over": 1,
-        "level": 0,
-        "nextmatch": "23:A"
+        "over": 0,
+        "level": 2,
+        "nextmatch": "15:A"
     }, {
         "uniqueId": 14,
-        "team1": "Ugo/Ggy",
+        "team1": "",
         "team2": "",
         "score": "0:0",
-        "over": 1,
-        "level": 0,
-        "nextmatch": "23:B"
+        "over": 0,
+        "level": 2,
+        "nextmatch": "15:B"
     }, {
         "uniqueId": 15,
-        "team1": "José/Kha Zed",
-        "team2": "",
-        "score": "0:0",
-        "over": 1,
-        "level": 0,
-        "nextmatch": "24:A"
-    }, {
-        "uniqueId": 16,
-        "team1": "Willy/Mrik Brown",
-        "team2": "",
-        "score": "0:0",
-        "over": 1,
-        "level": 0,
-        "nextmatch": "24:B"
-    }, {
-        "uniqueId": 17,
-        "team1": "",
-        "team2": "",
-        "score": "0:0",
-        "over": 0,
-        "level": 1,
-        "nextmatch": "25:A"
-    }, {
-        "uniqueId": 18,
-        "team1": "",
-        "team2": "",
-        "score": "0:0",
-        "over": 0,
-        "level": 1,
-        "nextmatch": "25:B"
-    }, {
-        "uniqueId": 19,
-        "team1": "",
-        "team2": "",
-        "score": "0:0",
-        "over": 0,
-        "level": 1,
-        "nextmatch": "26:A"
-    }, {
-        "uniqueId": 20,
-        "team1": "",
-        "team2": "",
-        "score": "0:0",
-        "over": 0,
-        "level": 1,
-        "nextmatch": "26:B"
-    }, {
-        "uniqueId": 21,
-        "team1": "",
-        "team2": "",
-        "score": "0:0",
-        "over": 0,
-        "level": 1,
-        "nextmatch": "27:A"
-    }, {
-        "uniqueId": 22,
-        "team1": "",
-        "team2": "",
-        "score": "0:0",
-        "over": 0,
-        "level": 1,
-        "nextmatch": "27:B"
-    }, {
-        "uniqueId": 23,
-        "team1": "",
-        "team2": "",
-        "score": "0:0",
-        "over": 0,
-        "level": 1,
-        "nextmatch": "28:A"
-    }, {
-        "uniqueId": 24,
-        "team1": "",
-        "team2": "",
-        "score": "0:0",
-        "over": 0,
-        "level": 1,
-        "nextmatch": "28:B"
-    }, {
-        "uniqueId": 25,
-        "team1": "",
-        "team2": "",
-        "score": "0:0",
-        "over": 0,
-        "level": 2,
-        "nextmatch": "29:A"
-    }, {
-        "uniqueId": 26,
-        "team1": "",
-        "team2": "",
-        "score": "0:0",
-        "over": 0,
-        "level": 2,
-        "nextmatch": "29:B"
-    }, {
-        "uniqueId": 27,
-        "team1": "",
-        "team2": "",
-        "score": "0:0",
-        "over": 0,
-        "level": 2,
-        "nextmatch": "30:A"
-    }, {
-        "uniqueId": 28,
-        "team1": "",
-        "team2": "",
-        "score": "0:0",
-        "over": 0,
-        "level": 2,
-        "nextmatch": "30:B"
-    }, {
-        "uniqueId": 29,
         "team1": "",
         "team2": "",
         "score": "0:0",
         "over": 0,
         "level": 3,
-        "nextmatch": "31:A"
-    }, {
-        "uniqueId": 30,
-        "team1": "",
-        "team2": "",
-        "score": "0:0",
-        "over": 0,
-        "level": 3,
-        "nextmatch": "31:B"
-    }, {
-        "uniqueId": 31,
-        "team1": "",
-        "team2": "",
-        "score": "0:0",
-        "over": 0,
-        "level": 4,
         "nextmatch": ""
     }]
 }

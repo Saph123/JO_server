@@ -1,1 +1,43 @@
-{"Teams": [{"stillingame": "True", "uniqueid": 1, "Players": "Elisa/Mureddu Antoine"}, {"stillingame": "True", "uniqueid": 2, "Players": "Bouchon Gaëlle/Vinot Thomas"}, {"stillingame": "True", "uniqueid": 3, "Players": "Marie Eyraud/Nisbav"}, {"stillingame": "True", "uniqueid": 4, "Players": "Grosset Sarah/couvreur antoine"}, {"stillingame": "True", "uniqueid": 5, "Players": "Alissone Mounier /Adrien Voc"}, {"stillingame": "True", "uniqueid": 6, "Players": "Fourot Charlene/Brice Colombier"}, {"stillingame": "True", "uniqueid": 7, "Players": "Vallon Alice/Cernesse Babouche"}, {"stillingame": "True", "uniqueid": 8, "Players": "Mailys/Girexlekent "}, {"stillingame": "True", "uniqueid": 9, "Players": "Aurore/Willy"}, {"stillingame": "True", "uniqueid": 10, "Players": "Gratiant Chloé /Patrice"}, {"stillingame": "True", "uniqueid": 11, "Players": "Perrotta kevin/Mrik Brown"}, {"stillingame": "True", "uniqueid": 12, "Players": "Del Cerro Mathias/Ugo"}, {"stillingame": "True", "uniqueid": 13, "Players": "Werner Jolan/nan"}]}
+{
+    "Teams": [{
+        "stillingame": "True",
+        "uniqueid": 1,
+        "Players": "Gratiant Chloé /Tonton Toinou"
+    }, {
+        "stillingame": "True",
+        "uniqueid": 2,
+        "Players": "Babouche /Medrano Johan"
+    }, {
+        "stillingame": "True",
+        "uniqueid": 3,
+        "Players": "Gazou /Vinot Thomas"
+    }, {
+        "stillingame": "True",
+        "uniqueid": 4,
+        "Players": "Khaladji Emma/Sam Ahizi"
+    }, {
+        "stillingame": "True",
+        "uniqueid": 5,
+        "Players": "Inès Leduc/Besson maxime"
+    }, {
+        "stillingame": "True",
+        "uniqueid": 6,
+        "Players": "Coulouvrat carol-ann/Ugo"
+    }, {
+        "stillingame": "True",
+        "uniqueid": 7,
+        "Players": "Werner Jolan/Guibra"
+    }, {
+        "stillingame": "True",
+        "uniqueid": 8,
+        "Players": "Faure Béranger /Del Cerro Mathias"
+    }, {
+        "stillingame": "True",
+        "uniqueid": 9,
+        "Players": "Lapinou/Brice"
+    }, {
+        "stillingame": "True",
+        "uniqueid": 10,
+        "Players": "Vice gros cuisseau "
+    }]
+}

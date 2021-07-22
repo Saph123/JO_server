@@ -4,10 +4,12 @@ import pandas
 from utils import concatenate_players, get_file_name, get_sport_config, generate_table
 from utils import generate_pools
 
-path = os.path.join(os.getcwd()+"/JO_2020.xlsx")
+path = os.path.join(os.getcwd()+"/JO_2021.xlsx")
 
 sports_name = ("10 km de Meyssiez (9,5 km 150 D+)",
           "Volley",
+          "Petanque",
+          "Molky",
           "Waterpolo (Tournoi par équipe de 5 )",
           "Lancer de tong",
           "Ping pong",
@@ -15,14 +17,13 @@ sports_name = ("10 km de Meyssiez (9,5 km 150 D+)",
           "Flechette",
           "Blindtest ventriglisse relais bière",
           "Polish Horseshoes",
-          "Tournoi de ShiFuMi",
           "100m Ricard ",
           "Beer pong",
           "Dodgeball",
           "Course d'orientation",
-          "Krossfit",
           "Concours de pizza",
-          "Maximum de distance au rameur en équipe")
+          "Natation Synchronisée",
+          "Spikeball")
 
 for sport_name in sports_name:
     excel_sheet = pandas.read_excel(path, sheet_name=sport_name, engine="openpyxl")

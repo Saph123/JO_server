@@ -34,9 +34,13 @@ class myHandler (BaseHTTPRequestHandler):
         self.end_headers()
         path = root_dir + self.path
         print(path)
-        with open(path, 'rb') as file:
-            # Send the html message
-            self.wfile.write(file.read())
+        if os.path.exists(path):
+            with open(path, 'rb') as file:
+                # Send the html message
+                self.wfile.write(file.read())
+        else:
+            print(f"Error: No such file or directory: {path}")
+            self.wfile.write("")
         return
 
     def do_POST(self):

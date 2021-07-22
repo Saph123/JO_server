@@ -2,28 +2,21 @@
     "groups": [{
         "name": "A",
         "teams": [{
-            "name": "Girexlekent /Vinot Thomas/Perrotta kevin/Mam's dibartouz",
+            "name": "Boolbi/Ugo/Corne Hugo/Lapinou/José",
             "wins": 0,
             "played": 0,
             "loses": 0,
             "points": 0,
             "diff": 0
         }, {
-            "name": "Jerome Brunel/Ugo/Alexandre Garcia/couvreur antoine",
+            "name": "Chataignon Mickael/Alexis Prompsaud/Shmavosaure Brown/Vinot Thomas/Brice",
             "wins": 0,
             "played": 0,
             "loses": 0,
             "points": 0,
             "diff": 0
         }, {
-            "name": "Alexis Jeannot Lapinou/Ggy/Mureddu Antoine/Mic (Bifsteak pour les intimes) ",
-            "wins": 0,
-            "played": 0,
-            "loses": 0,
-            "points": 0,
-            "diff": 0
-        }, {
-            "name": "Mrik Brown/José/Boulbi/besson maxime",
+            "name": "Besson maxime/Guibra/Vice gros cuisseau /Tonton Toinou/Girex",
             "wins": 0,
             "played": 0,
             "loses": 0,
@@ -32,46 +25,25 @@
         }],
         "over": 0,
         "level": 0,
-        "team_number": 4,
+        "team_number": 3,
         "matches": [{
             "uniqueId": 1,
-            "team1": "Girexlekent /Vinot Thomas/Perrotta kevin/Mam's dibartouz",
-            "team2": "Jerome Brunel/Ugo/Alexandre Garcia/couvreur antoine",
+            "team1": "Boolbi/Ugo/Corne Hugo/Lapinou/José",
+            "team2": "Chataignon Mickael/Alexis Prompsaud/Shmavosaure Brown/Vinot Thomas/Brice",
             "score": "0:0",
             "over": 0,
             "level": 0
         }, {
             "uniqueId": 2,
-            "team1": "Girexlekent /Vinot Thomas/Perrotta kevin/Mam's dibartouz",
-            "team2": "Alexis Jeannot Lapinou/Ggy/Mureddu Antoine/Mic (Bifsteak pour les intimes) ",
+            "team1": "Boolbi/Ugo/Corne Hugo/Lapinou/José",
+            "team2": "Besson maxime/Guibra/Vice gros cuisseau /Tonton Toinou/Girex",
             "score": "0:0",
             "over": 0,
             "level": 0
         }, {
             "uniqueId": 3,
-            "team1": "Girexlekent /Vinot Thomas/Perrotta kevin/Mam's dibartouz",
-            "team2": "Mrik Brown/José/Boulbi/besson maxime",
-            "score": "0:0",
-            "over": 0,
-            "level": 0
-        }, {
-            "uniqueId": 4,
-            "team1": "Jerome Brunel/Ugo/Alexandre Garcia/couvreur antoine",
-            "team2": "Alexis Jeannot Lapinou/Ggy/Mureddu Antoine/Mic (Bifsteak pour les intimes) ",
-            "score": "0:0",
-            "over": 0,
-            "level": 0
-        }, {
-            "uniqueId": 5,
-            "team1": "Jerome Brunel/Ugo/Alexandre Garcia/couvreur antoine",
-            "team2": "Mrik Brown/José/Boulbi/besson maxime",
-            "score": "0:0",
-            "over": 0,
-            "level": 0
-        }, {
-            "uniqueId": 6,
-            "team1": "Alexis Jeannot Lapinou/Ggy/Mureddu Antoine/Mic (Bifsteak pour les intimes) ",
-            "team2": "Mrik Brown/José/Boulbi/besson maxime",
+            "team1": "Chataignon Mickael/Alexis Prompsaud/Shmavosaure Brown/Vinot Thomas/Brice",
+            "team2": "Besson maxime/Guibra/Vice gros cuisseau /Tonton Toinou/Girex",
             "score": "0:0",
             "over": 0,
             "level": 0

@@ -102,7 +102,8 @@ def get_boobs_number(athletes):
 def concatenate_players(excel_sheet, column_name):
     concat_str = ""
     for player in excel_sheet[column_name]:
-        concat_str += f"{player}/"
+        if isinstance(player, str):
+            concat_str += f"{player}/"
     concat_str = concat_str[:-1]
     return concat_str
 
@@ -163,7 +164,7 @@ def generate_pools(teams):
         nbr_of_pools = 1
     else:
         nbr_of_pools = int(nbr_of_teams / 3)
-        print(f"pools: {nbr_of_pools}")
+    print(f"pools: {nbr_of_pools}")
     for pool_name in string.ascii_uppercase[:nbr_of_pools]:
         pool = dict(name=pool_name, teams=[], over=0, level=0, team_number=0, matches=[])
         pools["groups"].append(pool)

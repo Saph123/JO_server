@@ -1,6 +1,8 @@
 {
     "10 km de Meyssiez (9,5 km 150 D+)" : "Trail.json",
     "Volley" : "Volley.json",
+    "Petanque" : "Petanque.json",
+    "Molky" : "Molky.json",
     "Waterpolo (Tournoi par équipe de 5 )": "Waterpolo.json",
     "Lancer de tong" : "Tong.json",
     "Ping pong" : "PingPong.json",
@@ -16,7 +18,6 @@
     "Course d'orientation" : "Orientation.json",
     "Krossfit" : "Krossfit.json",
     "Concours de pizza" : "Pizza.json",
-    "Maximum de distance au rameur en équipe" : "Rameur.json",
-    "Molky" : "Molky.json",
+    "Spikeball" : "Spikeball.json",
     "Natation Synchronisée" : "Natation.json"
 }
