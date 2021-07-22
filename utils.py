@@ -152,6 +152,7 @@ def generate_table(teams, teams_per_match):
             break
         if not match_dict["team2"]:
             match_dict["over"] = 1
+            match_dict["score"] = "23:0"
     return table
 
 
