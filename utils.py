@@ -200,3 +200,22 @@ def generate_pools(teams):
         for match in pool["matches"]:
             print(match)
     return pools
+
+
+def team_to_next_step(sport, match_id):
+    with open(f"teams/{sport}_playoff.json", "r") as file:
+        data = json.load(file)
+        matches = data["matches"]
+        for match in matches:
+            if match["uniqueId"] == match_id:
+                if match["over"]:
+                    results = match["score"].split(":")
+                    winner = "team1" if int(results[0]) > int(results[1]) else "team2"
+                    next_match = match['nextmatch']
+                    next_match_id = int(next_match.split(":")[0])
+                    for new_match in matches:
+                        if new_match["uniqueId"] == next_match_id:
+                            team = "team1" if "A" in next_match else "team2"
+                            new_match[team] = match[winner]
+    with open(f"teams/{sport}_playoff.json", "w") as file:
+        json.dump(data, file, ensure_ascii=False)

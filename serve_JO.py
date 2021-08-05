@@ -9,6 +9,7 @@ import simplejson
 import time    
 import json
 import hashlib
+from utils import team_to_next_step
 root_dir = os.path.dirname(os.path.realpath(__file__))
 
 try:
@@ -85,8 +86,28 @@ class myHandler (BaseHTTPRequestHandler):
             self.send_header("Access-Control-Allow-Origin","*")
             self.end_headers()
         elif "pushmatch" in self.path:
-            print(str(post_data))
-            print(json.loads(str(post_data)))
+            print(post_data.decode("utf-8"))
+            print(json.loads(post_data.decode("utf-8")))
+            data = json.loads(post_data.decode('utf-8'))
+            match = data["match"]
+            type = data["type"]
+            sport = data["sport"]
+            match_id = int(data["match"]["uniqueId"])
+            if type == "playoff":
+                with open(f"teams/{sport}_playoff.json", "r") as file:
+                    matches_data = json.load(file)
+                with open(f"teams/{sport}_playoff.json", "w") as file:
+                    for match in matches_data["matches"]:
+                        if match_id == match["uniqueId"]:
+                            print(data["match"])
+                            match["score"] = data["match"]["score"]
+                            results = match["score"].split(":")
+                            winner = 1 if int(results[0]) > int(results[1]) else 2                           
+                            match["over"] = winner
+                            print(match)
+                    print(matches_data)
+                    json.dump(matches_data, file, ensure_ascii=False)
+            team_to_next_step(sport, match_id)
             # tmpdict = simplejson.loads("{"+str(post_data).split("{")[1].split("}")[0]+"}")
             print (tmpdict)
         # self.wfile.write("")
