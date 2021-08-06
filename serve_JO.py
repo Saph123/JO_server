@@ -9,7 +9,7 @@ import simplejson
 import time    
 import json
 import hashlib
-from utils import team_to_next_step
+from utils import fix_json, update_playoff_match, user_is_authorized, update_list, update_poules_match, log, fix_json
 root_dir = os.path.dirname(os.path.realpath(__file__))
 
 try:
@@ -89,28 +89,21 @@ class myHandler (BaseHTTPRequestHandler):
             print(post_data.decode("utf-8"))
             print(json.loads(post_data.decode("utf-8")))
             data = json.loads(post_data.decode('utf-8'))
-            match = data["match"]
-            type = data["type"]
+            username = data["username"]
             sport = data["sport"]
-            match_id = int(data["match"]["uniqueId"])
-            if type == "playoff":
-                with open(f"teams/{sport}_playoff.json", "r") as file:
-                    matches_data = json.load(file)
-                with open(f"teams/{sport}_playoff.json", "w") as file:
-                    for match in matches_data["matches"]:
-                        if match_id == match["uniqueId"]:
-                            print(data["match"])
-                            match["score"] = data["match"]["score"]
-                            results = match["score"].split(":")
-                            winner = 1 if int(results[0]) > int(results[1]) else 2                           
-                            match["over"] = winner
-                            print(match)
-                    print(matches_data)
-                    json.dump(matches_data, file, ensure_ascii=False)
-            team_to_next_step(sport, match_id)
-            # tmpdict = simplejson.loads("{"+str(post_data).split("{")[1].split("}")[0]+"}")
-            print (tmpdict)
-        # self.wfile.write("")
+            if user_is_authorized(username, sport):
+                match = data["match"]
+                type = data["type"]
+                if type == "playoff":
+                    match_id = int(data["match"]["uniqueId"])
+                    update_playoff_match(sport, match_id, match)
+                elif type == "poules":
+                    match_id = int(data["match"]["uniqueId"])
+                    update_poules_match(sport, match_id, match)
+                elif type == "liste":
+                    update_list(sport, match)
+            fix_json()
+            log(sport, username, data)
         return
 
 

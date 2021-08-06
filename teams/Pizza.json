@@ -1,45 +1,86 @@
 {
-    "Teams": [{
-        "stillingame": "True",
-        "uniqueid": 1,
-        "Players": "Gratiant Chloé /Tonton Toinou"
-    }, {
-        "stillingame": "True",
-        "uniqueid": 2,
-        "Players": "Babouche /Medrano Johan"
-    }, {
-        "stillingame": "True",
-        "uniqueid": 3,
-        "Players": "Gazou /Vinot Thomas"
-    }, {
-        "stillingame": "True",
-        "uniqueid": 4,
-        "Players": "Khaladji Emma/Sam Ahizi"
-    }, {
-        "stillingame": "True",
-        "uniqueid": 5,
-        "Players": "Inès Leduc/Besson maxime"
-    }, {
-        "stillingame": "True",
-        "uniqueid": 6,
-        "Players": "Coulouvrat carol-ann/Ugo"
-    }, {
-        "stillingame": "True",
-        "uniqueid": 7,
-        "Players": "Werner Jolan/Guibra"
-    }, {
-        "stillingame": "True",
-        "uniqueid": 8,
-        "Players": "Faure Béranger /Del Cerro Mathias"
-    }, {
-        "stillingame": "True",
-        "uniqueid": 9,
-        "Players": "Lapinou/Brice"
-    }, {
-        "stillingame": "True",
-        "uniqueid": 10,
-        "Players": "Vice gros cuisseau "
-    }]
+    "Teams": [
+        {
+            "stillingame": "True",
+            "uniqueid": 1,
+            "Players": "Gratiant Chloé /Tonton Toinou",
+            "rank": 0,
+            "score": "",
+            "time": ""
+        },
+        {
+            "stillingame": "True",
+            "uniqueid": 2,
+            "Players": "Babouche /Medrano Johan",
+            "rank": 0,
+            "score": "",
+            "time": ""
+        },
+        {
+            "stillingame": "True",
+            "uniqueid": 3,
+            "Players": "Gazou /Vinot Thomas",
+            "rank": 0,
+            "score": "",
+            "time": ""
+        },
+        {
+            "stillingame": "True",
+            "uniqueid": 4,
+            "Players": "Khaladji Emma/Sam Ahizi",
+            "rank": 0,
+            "score": "",
+            "time": ""
+        },
+        {
+            "stillingame": "True",
+            "uniqueid": 5,
+            "Players": "Inès Leduc/Besson maxime",
+            "rank": 0,
+            "score": "",
+            "time": ""
+        },
+        {
+            "stillingame": "True",
+            "uniqueid": 6,
+            "Players": "Coulouvrat carol-ann/Ugo",
+            "rank": 0,
+            "score": "",
+            "time": ""
+        },
+        {
+            "stillingame": "True",
+            "uniqueid": 7,
+            "Players": "Werner Jolan/Guibra",
+            "rank": 0,
+            "score": "",
+            "time": ""
+        },
+        {
+            "stillingame": "True",
+            "uniqueid": 8,
+            "Players": "Faure Béranger /Del Cerro Mathias",
+            "rank": 0,
+            "score": "",
+            "time": ""
+        },
+        {
+            "stillingame": "True",
+            "uniqueid": 9,
+            "Players": "Lapinou/Brice",
+            "rank": 0,
+            "score": "",
+            "time": ""
+        },
+        {
+            "stillingame": "True",
+            "uniqueid": 10,
+            "Players": "Vice gros cuisseau ",
+            "rank": 0,
+            "score": "",
+            "time": ""
+        }
+    ]
 }
 
 

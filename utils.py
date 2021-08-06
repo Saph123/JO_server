@@ -1,3 +1,5 @@
+import os
+import datetime
 import random
 import json
 import string
@@ -219,3 +221,120 @@ def team_to_next_step(sport, match_id):
                             new_match[team] = match[winner]
     with open(f"teams/{sport}_playoff.json", "w") as file:
         json.dump(data, file, ensure_ascii=False)
+
+
+def user_is_authorized(username, sport):
+    with open(f"teams/{sport}_status.json", "r") as file:
+        data = json.load(file)
+        return username in data["arbitre"] or username in ("max", "antoine")
+
+def retrieve_score(match_data):
+    score = match_data["score"]
+    assert score.count(":") == 1
+    score_team1, score_team2 = score.split(":")
+    return int(score_team1), int(score_team2)
+
+
+def update_playoff_match(sport, match_id, match_data):
+    score_team1, score_team2 = retrieve_score(match_data)
+    with open(f"teams/{sport}_playoff.json", "r") as file:
+        matches_data = json.load(file)
+        for match in matches_data["matches"]:
+            if match_id == match["uniqueId"]:
+                print(match_data)
+                match["score"] = match_data["score"]
+                results = match["score"].split(":")
+                winner = 1 if score_team1 > score_team2 else 2
+                if int(results[0]) == int(results[1]):
+                    winner = 0 
+                match["over"] = winner
+                print(match)
+        print(matches_data)
+    with open(f"teams/{sport}_playoff.json", "w") as file:
+        json.dump(matches_data, file, ensure_ascii=False)
+    team_to_next_step(sport, match_id)
+
+
+def update_poules_match(sport, match_id, match_data):
+    score_team1, score_team2 = retrieve_score(match_data)
+    with open(f"teams/{sport}_poules.json", "r") as file:
+        matches_data = json.load(file)
+        print(matches_data)
+        for poule in matches_data["groups"]:
+            if poule["name"] == match_data["poulename"]:
+                for match in poule["matches"]:
+                    if match_id == match["uniqueId"] and not match["over"]:
+                        print(match_data)
+                        match["score"] = match_data["score"]
+                        winner = 1 if score_team1 > score_team2 else 2
+                        if score_team1 == score_team2:
+                            winner = 0 
+                        match["over"] = winner
+                        poule = compute_points(poule)
+                    print(match)
+            print(matches_data)
+    with open(f"teams/{sport}_poules.json", "w") as file:
+        json.dump(matches_data, file, ensure_ascii=False)
+
+
+def compute_points(poule):
+    for team in poule["teams"]:
+        team["wins"] = 0
+        team["loses"] = 0
+        team["diff"] = 0
+        team["played"] = 0
+        team["points"] = 0
+    for match in poule["matches"]:
+        score_team1, score_team2 = retrieve_score(match)
+        if score_team1 or score_team2:
+            diff = score_team1 - score_team2
+            for team in poule["teams"]:
+                if team["name"] == match["team1"]:
+                    if diff > 0:
+                        team["wins"] += 1
+                        team["points"] += 3
+                    elif diff < 0:
+                        team["loses"] += 1
+                    else:
+                        team["points"] += 1
+                    team["played"] += 1
+                    team["diff"] += diff
+                if team["name"] == match["team2"]:
+                    if diff < 0:
+                        team["wins"] += 1
+                        team["points"] += 3
+                    elif diff > 0:
+                        team["loses"] += 1
+                    else:
+                        team["points"] += 1
+                    team["played"] += 1
+                    team["diff"] -= diff
+    return poule
+
+
+def update_list(sport, data):
+    with open(f"teams/{sport}.json", "r") as file:
+        matches_data = json.load(file)
+        print(data)
+        for player_data in data:
+            player_id = player_data["uniqueId"]
+            for player in matches_data["Teams"]:
+                if player_id == player["uniqueid"]:
+                    player["rank"] = player_data["rank"]
+                    player["score"] = player_data["score"]
+    with open(f"teams/{sport}.json", "w") as file:
+        json.dump(matches_data, file, ensure_ascii=False)
+        
+
+def log(sport, username, data):
+    with open(f"logs/{sport}.log", "a") as file:
+        date = datetime.datetime.now().strftime("%Y/%m/%d %H:%M:%S")
+        file.write(f"{date}: {username}:\n {data}\n")
+
+
+def fix_json():
+    for filename in os.listdir("/home/JO/JO_server/teams"):
+        if ".json" in filename:
+            file_handler = open(os.path.join("/home/JO/JO_server/teams", filename), "a")
+            file_handler.write("\n\n\n\n")
+            file_handler.close()

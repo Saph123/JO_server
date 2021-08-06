@@ -1,21 +1,38 @@
 {
-    "Teams": [{
-        "stillingame": "True",
-        "uniqueid": 1,
-        "Players": "Gratiant Chloé /Vinot Thomas/Lavanant Mathieu/Werner Jolan/Faure Béranger "
-    }, {
-        "stillingame": "True",
-        "uniqueid": 2,
-        "Players": "Mimo/Besson maxime/Ugo/Lapinou/Pierrick"
-    }, {
-        "stillingame": "True",
-        "uniqueid": 3,
-        "Players": "Gazou /José/La Guille/Brice/Shmavosaure Brown"
-    }, {
-        "stillingame": "True",
-        "uniqueid": 4,
-        "Players": "Khaladji Emma/Willy/Vice gros cuisseau /Sam Ahizi/Girex"
-    }]
+    "Teams": [
+        {
+            "stillingame": "True",
+            "uniqueid": 1,
+            "Players": "Gratiant Chloé /Vinot Thomas/Lavanant Mathieu/Werner Jolan/Faure Béranger ",
+            "rank": 0,
+            "score": "",
+            "time": ""
+        },
+        {
+            "stillingame": "True",
+            "uniqueid": 2,
+            "Players": "Mimo/Besson maxime/Ugo/Lapinou/Pierrick",
+            "rank": 0,
+            "score": "",
+            "time": ""
+        },
+        {
+            "stillingame": "True",
+            "uniqueid": 3,
+            "Players": "Gazou /José/La Guille/Brice/Shmavosaure Brown",
+            "rank": 0,
+            "score": "",
+            "time": ""
+        },
+        {
+            "stillingame": "True",
+            "uniqueid": 4,
+            "Players": "Khaladji Emma/Willy/Vice gros cuisseau /Sam Ahizi/Girex",
+            "rank": 0,
+            "score": "",
+            "time": ""
+        }
+    ]
 }
 
 
