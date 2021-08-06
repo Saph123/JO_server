@@ -86,8 +86,6 @@ class myHandler (BaseHTTPRequestHandler):
             self.send_header("Access-Control-Allow-Origin","*")
             self.end_headers()
         elif "pushmatch" in self.path:
-            print(post_data.decode("utf-8"))
-            print(json.loads(post_data.decode("utf-8")))
             data = json.loads(post_data.decode('utf-8'))
             username = data["username"]
             sport = data["sport"]

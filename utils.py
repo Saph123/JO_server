@@ -1,3 +1,4 @@
+import copy
 import os
 import datetime
 import random
@@ -259,22 +260,82 @@ def update_poules_match(sport, match_id, match_data):
     score_team1, score_team2 = retrieve_score(match_data)
     with open(f"teams/{sport}_poules.json", "r") as file:
         matches_data = json.load(file)
-        print(matches_data)
         for poule in matches_data["groups"]:
             if poule["name"] == match_data["poulename"]:
                 for match in poule["matches"]:
                     if match_id == match["uniqueId"] and not match["over"]:
-                        print(match_data)
                         match["score"] = match_data["score"]
                         winner = 1 if score_team1 > score_team2 else 2
                         if score_team1 == score_team2:
                             winner = 0 
                         match["over"] = winner
                         poule = compute_points(poule)
-                    print(match)
-            print(matches_data)
     with open(f"teams/{sport}_poules.json", "w") as file:
         json.dump(matches_data, file, ensure_ascii=False)
+    teams = dict(Teams=list())
+    with open(f"teams/{sport}_poules.json", "r") as file:
+        matches_data = json.load(file)
+        all_poules_over = True
+        for poule in matches_data["groups"]:
+            if not poule["over"]:
+                poule_over = True
+                for match in poule["matches"]:
+                    if not match["over"]:
+                        poule_over = False
+                poule["over"] = poule_over
+            if not poule_over:
+                all_poules_over = False
+        if all_poules_over:
+            for poule in matches_data["groups"]:
+                teams["Teams"].append(dict(Players=get_n_th(poule, 1)["name"]))
+            matches_data["groups"].reverse()
+            for poule in matches_data["groups"]:
+                teams["Teams"].append(dict(Players=get_n_th(poule, 2)["name"]))
+            table = generate_table(teams["Teams"], 2)
+            file_name = f"{sport}_playoff.json"
+            with open(f"teams/{file_name}", "w") as file:
+                json.dump(table, file, ensure_ascii=False)
+            with open(f"teams/{sport}_status.json", "r") as file:
+                data = json.load(file)
+                if "playoff" in data["states"]:
+                    data["status"] = "playoff"
+            with open(f"teams/{sport}_status.json", "w") as file:
+                json.dump(data, file)
+
+
+def get_n_th(poule, n):
+    poule_copy = copy.deepcopy(poule)
+    teams = []
+    while len(teams) < n:
+        highest_pts = 0
+        best_team = ""
+        best_diff = 0
+        for team in poule_copy["teams"]:
+            points = team["points"]
+            diff = team["diff"]
+            team_name = team["name"]
+            if highest_pts < points:
+                highest_pts = points
+                best_diff = diff
+                best_team = team
+            elif highest_pts == points:
+                if best_diff < diff:
+                    highest_pts = points
+                    best_diff = diff
+                    best_team = team
+                elif best_diff == diff:
+                    for match in poule_copy["matches"]:
+                        if match["team1"] == best_team["name"] and match["team2"] == team_name:
+                            if match["over"] == 2:
+                                best_team == team
+                        elif match["team2"] == best_team["name"] and match["team1"] == team_name:
+                            if match["over"] == 1:
+                                best_team == team
+        print(best_team["name"])
+        teams.append(best_team)
+        poule_copy["teams"].remove(best_team)
+    print(teams[-1])
+    return teams[-1]
 
 
 def compute_points(poule):
