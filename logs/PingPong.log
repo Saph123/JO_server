@@ -1,0 +1,4 @@
+2021/08/09 15:38:21: max:
+ {'sport': 'PingPong', 'username': 'max', 'type': 'playoff', 'match': {'team1': 'Gazou /Del Cerro Mathias', 'team2': 'Maouhoub Quentin/Assidigbey Christophe', 'sport': 'PingPong', 'uniqueId': 1, 'score': '23:0', 'over': 1, 'level': 0, 'poulename': '', 'nextmatch': '9:A'}, 'uniqueId': 1}
+2021/08/09 15:38:34: max:
+ {'sport': 'PingPong', 'username': 'max', 'type': 'playoff', 'match': {'team1': 'Coulouvrat carol-ann/Girex', 'team2': 'Besson maxime/Pierrick', 'sport': 'PingPong', 'uniqueId': 2, 'score': '0:15', 'over': 2, 'level': 0, 'poulename': '', 'nextmatch': '9:B'}, 'uniqueId': 2}
