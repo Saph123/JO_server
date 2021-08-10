@@ -2,21 +2,21 @@
     "groups": [{
         "name": "A",
         "teams": [{
-            "name": "Boolbi/Ugo/Corne Hugo/Lapinou/José",
+            "name": "Boolbi/Ugo/Hugo/Lapinou/José",
             "wins": 0,
             "played": 0,
             "loses": 0,
             "points": 0,
             "diff": 0
         }, {
-            "name": "Chataignon Mickael/Alexis Prompsaud/Shmavosaure Brown/Vinot Thomas/Brice",
+            "name": "Micka/Prompsaud/Shmave/Thomas/Brice",
             "wins": 0,
             "played": 0,
             "loses": 0,
             "points": 0,
             "diff": 0
         }, {
-            "name": "Besson maxime/Guibra/Vice gros cuisseau /Tonton Toinou/Girex",
+            "name": "Max/Guibra/Rémi/Antoine/Girex",
             "wins": 0,
             "played": 0,
             "loses": 0,
@@ -28,28 +28,64 @@
         "team_number": 3,
         "matches": [{
             "uniqueId": 1,
-            "team1": "Boolbi/Ugo/Corne Hugo/Lapinou/José",
-            "team2": "Chataignon Mickael/Alexis Prompsaud/Shmavosaure Brown/Vinot Thomas/Brice",
+            "team1": "Boolbi/Ugo/Hugo/Lapinou/José",
+            "team2": "Micka/Prompsaud/Shmave/Thomas/Brice",
             "score": "0:0",
             "over": 0,
             "level": 0
         }, {
             "uniqueId": 2,
-            "team1": "Boolbi/Ugo/Corne Hugo/Lapinou/José",
-            "team2": "Besson maxime/Guibra/Vice gros cuisseau /Tonton Toinou/Girex",
+            "team1": "Boolbi/Ugo/Hugo/Lapinou/José",
+            "team2": "Max/Guibra/Rémi/Antoine/Girex",
             "score": "0:0",
             "over": 0,
             "level": 0
         }, {
             "uniqueId": 3,
-            "team1": "Chataignon Mickael/Alexis Prompsaud/Shmavosaure Brown/Vinot Thomas/Brice",
-            "team2": "Besson maxime/Guibra/Vice gros cuisseau /Tonton Toinou/Girex",
+            "team1": "Micka/Prompsaud/Shmave/Thomas/Brice",
+            "team2": "Max/Guibra/Rémi/Antoine/Girex",
             "score": "0:0",
             "over": 0,
             "level": 0
         }]
     }]
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

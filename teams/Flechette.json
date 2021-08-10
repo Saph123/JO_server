@@ -3,7 +3,7 @@
         {
             "stillingame": "True",
             "uniqueid": 1,
-            "Players": "Babouche ",
+            "Players": "Babouche",
             "rank": 0,
             "score": "",
             "time": ""
@@ -11,7 +11,7 @@
         {
             "stillingame": "True",
             "uniqueid": 2,
-            "Players": "Coulouvrat carol-ann",
+            "Players": "Carol-Ann",
             "rank": 0,
             "score": "",
             "time": ""
@@ -19,7 +19,7 @@
         {
             "stillingame": "True",
             "uniqueid": 3,
-            "Players": "Khaladji Emma",
+            "Players": "Emma",
             "rank": 0,
             "score": "",
             "time": ""
@@ -27,7 +27,7 @@
         {
             "stillingame": "True",
             "uniqueid": 4,
-            "Players": "Gratiant Chloé ",
+            "Players": "Chloé",
             "rank": 0,
             "score": "",
             "time": ""
@@ -43,7 +43,7 @@
         {
             "stillingame": "True",
             "uniqueid": 6,
-            "Players": "Gazou ",
+            "Players": "Gazou",
             "rank": 0,
             "score": "",
             "time": ""
@@ -51,7 +51,7 @@
         {
             "stillingame": "True",
             "uniqueid": 7,
-            "Players": "Charlène Fourot ",
+            "Players": "Charlène ",
             "rank": 0,
             "score": "",
             "time": ""
@@ -67,7 +67,7 @@
         {
             "stillingame": "True",
             "uniqueid": 9,
-            "Players": "Werner Jolan",
+            "Players": "Jolan",
             "rank": 0,
             "score": "",
             "time": ""
@@ -75,7 +75,7 @@
         {
             "stillingame": "True",
             "uniqueid": 10,
-            "Players": "Sam Ahizi",
+            "Players": "Sam",
             "rank": 0,
             "score": "",
             "time": ""
@@ -83,7 +83,7 @@
         {
             "stillingame": "True",
             "uniqueid": 11,
-            "Players": "Medrano Johan",
+            "Players": "Johan",
             "rank": 0,
             "score": "",
             "time": ""
@@ -91,7 +91,7 @@
         {
             "stillingame": "True",
             "uniqueid": 12,
-            "Players": "Chataignon Mickael",
+            "Players": "Micka",
             "rank": 0,
             "score": "",
             "time": ""
@@ -131,7 +131,7 @@
         {
             "stillingame": "True",
             "uniqueid": 17,
-            "Players": "Vinot Thomas",
+            "Players": "Thomas",
             "rank": 0,
             "score": "",
             "time": ""
@@ -163,7 +163,7 @@
         {
             "stillingame": "True",
             "uniqueid": 21,
-            "Players": "Besson maxime",
+            "Players": "Max",
             "rank": 0,
             "score": "",
             "time": ""
@@ -179,7 +179,7 @@
         {
             "stillingame": "True",
             "uniqueid": 23,
-            "Players": "Assidigbey Christophe",
+            "Players": "Chris",
             "rank": 0,
             "score": "",
             "time": ""
@@ -187,7 +187,7 @@
         {
             "stillingame": "True",
             "uniqueid": 24,
-            "Players": "Tonton Toinou",
+            "Players": "Antoine",
             "rank": 0,
             "score": "",
             "time": ""
@@ -195,13 +195,49 @@
         {
             "stillingame": "True",
             "uniqueid": 25,
-            "Players": "Del Cerro Mathias",
+            "Players": "Mathias",
             "rank": 0,
             "score": "",
             "time": ""
         }
     ]
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

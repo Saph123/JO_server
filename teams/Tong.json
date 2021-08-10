@@ -3,7 +3,7 @@
         {
             "stillingame": "True",
             "uniqueid": 1,
-            "Players": "Gazou ",
+            "Players": "Gazou",
             "rank": 0,
             "score": "",
             "time": ""
@@ -11,7 +11,7 @@
         {
             "stillingame": "True",
             "uniqueid": 2,
-            "Players": "Babouche ",
+            "Players": "Babouche",
             "rank": 0,
             "score": "",
             "time": ""
@@ -27,7 +27,7 @@
         {
             "stillingame": "True",
             "uniqueid": 4,
-            "Players": "Khaladji Emma",
+            "Players": "Emma",
             "rank": 0,
             "score": "",
             "time": ""
@@ -35,7 +35,7 @@
         {
             "stillingame": "True",
             "uniqueid": 5,
-            "Players": "Inès Leduc",
+            "Players": "Inès",
             "rank": 0,
             "score": "",
             "time": ""
@@ -67,7 +67,7 @@
         {
             "stillingame": "True",
             "uniqueid": 9,
-            "Players": "Medrano Johan",
+            "Players": "Johan",
             "rank": 0,
             "score": "",
             "time": ""
@@ -75,7 +75,7 @@
         {
             "stillingame": "True",
             "uniqueid": 10,
-            "Players": "Faure Béranger ",
+            "Players": "Béranger",
             "rank": 0,
             "score": "",
             "time": ""
@@ -91,7 +91,7 @@
         {
             "stillingame": "True",
             "uniqueid": 12,
-            "Players": "Vinot Thomas",
+            "Players": "Thomas",
             "rank": 0,
             "score": "",
             "time": ""
@@ -107,7 +107,7 @@
         {
             "stillingame": "True",
             "uniqueid": 14,
-            "Players": "Sam Ahizi",
+            "Players": "Sam",
             "rank": 0,
             "score": "",
             "time": ""
@@ -131,7 +131,7 @@
         {
             "stillingame": "True",
             "uniqueid": 17,
-            "Players": "Tonton Toinou",
+            "Players": "Antoine",
             "rank": 0,
             "score": "",
             "time": ""
@@ -147,7 +147,7 @@
         {
             "stillingame": "True",
             "uniqueid": 19,
-            "Players": "Werner Jolan",
+            "Players": "Jolan",
             "rank": 0,
             "score": "",
             "time": ""
@@ -155,7 +155,7 @@
         {
             "stillingame": "True",
             "uniqueid": 20,
-            "Players": "Chataignon Mickael",
+            "Players": "Micka",
             "rank": 0,
             "score": "",
             "time": ""
@@ -171,13 +171,49 @@
         {
             "stillingame": "True",
             "uniqueid": 22,
-            "Players": "Del Cerro Mathias",
+            "Players": "Mathias",
             "rank": 0,
             "score": "",
             "time": ""
         }
     ]
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

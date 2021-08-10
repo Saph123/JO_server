@@ -2,8 +2,8 @@
     "matches": [
         {
             "uniqueId": 1,
-            "team1": "Gazou /Lavanant Mathieu",
-            "team2": "Chataignon Mickael/Assidigbey Christophe",
+            "team1": "Gazou/Mathieu",
+            "team2": "Micka/Chris",
             "score": "0:0",
             "over": 0,
             "level": 0,
@@ -11,8 +11,8 @@
         },
         {
             "uniqueId": 2,
-            "team1": "Coulouvrat carol-ann/Faure Béranger ",
-            "team2": "La Guille/Besson maxime",
+            "team1": "Carol-Ann/Béranger",
+            "team2": "La Guille/Max",
             "score": "0:0",
             "over": 0,
             "level": 0,
@@ -20,8 +20,8 @@
         },
         {
             "uniqueId": 3,
-            "team1": "Vice gros cuisseau /Guibra",
-            "team2": "Del Cerro Mathias/Shmavosaure Brown",
+            "team1": "Rémi/Guibra",
+            "team2": "Mathias/Shmave",
             "score": "0:0",
             "over": 0,
             "level": 0,
@@ -29,7 +29,7 @@
         },
         {
             "uniqueId": 4,
-            "team1": "Girex/Medrano Johan",
+            "team1": "Girex/Johan",
             "team2": "Lapinou/Lucas",
             "score": "0:0",
             "over": 0,
@@ -66,6 +66,42 @@
     ],
     "levels": 3
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -2,11 +2,11 @@
     "Teams": [{
         "stillingame": "True",
         "uniqueid": 1,
-        "Players": "Gratiant Chloé /Chataignon Mickael"
+        "Players": "Chloé/Micka"
     }, {
         "stillingame": "True",
         "uniqueid": 2,
-        "Players": "Babouche /Girex"
+        "Players": "Babouche/Girex"
     }, {
         "stillingame": "True",
         "uniqueid": 3,
@@ -14,47 +14,47 @@
     }, {
         "stillingame": "True",
         "uniqueid": 4,
-        "Players": "Khaladji Emma/José"
+        "Players": "Emma/José"
     }, {
         "stillingame": "True",
         "uniqueid": 5,
-        "Players": "Coulouvrat carol-ann/Shmavosaure Brown"
+        "Players": "Carol-Ann/Shmave"
     }, {
         "stillingame": "True",
         "uniqueid": 6,
-        "Players": "Gazou /Vice gros cuisseau "
+        "Players": "Gazou/Rémi"
     }, {
         "stillingame": "True",
         "uniqueid": 7,
-        "Players": "Pierrick/Werner Jolan"
+        "Players": "Pierrick/Jolan"
     }, {
         "stillingame": "True",
         "uniqueid": 8,
-        "Players": "Corne Hugo/Del Cerro Mathias"
+        "Players": "Hugo/Mathias"
     }, {
         "stillingame": "True",
         "uniqueid": 9,
-        "Players": "Lucas/Tonton Toinou"
+        "Players": "Lucas/Antoine"
     }, {
         "stillingame": "True",
         "uniqueid": 10,
-        "Players": "Florian Jehannault /Faure Béranger "
+        "Players": "Florian/Béranger"
     }, {
         "stillingame": "True",
         "uniqueid": 11,
-        "Players": "Maouhoub Quentin/Michael Sansak"
+        "Players": "Quentin/Mich"
     }, {
         "stillingame": "True",
         "uniqueid": 12,
-        "Players": "Medrano Johan/Willy"
+        "Players": "Johan/Willy"
     }, {
         "stillingame": "True",
         "uniqueid": 13,
-        "Players": "Alexis Prompsaud/Guibra"
+        "Players": "Prompsaud/Guibra"
     }, {
         "stillingame": "True",
         "uniqueid": 14,
-        "Players": "Lavanant Mathieu/Sam Ahizi"
+        "Players": "Mathieu/Sam"
     }, {
         "stillingame": "True",
         "uniqueid": 15,
@@ -62,17 +62,53 @@
     }, {
         "stillingame": "True",
         "uniqueid": 16,
-        "Players": "Florent /Vinot Thomas"
+        "Players": "Florent /Thomas"
     }, {
         "stillingame": "True",
         "uniqueid": 17,
-        "Players": "MENARD Armand /Brice"
+        "Players": "Armand/Brice"
     }, {
         "stillingame": "True",
         "uniqueid": 18,
-        "Players": "Besson maxime/La Guille"
+        "Players": "Max/La Guille"
     }]
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

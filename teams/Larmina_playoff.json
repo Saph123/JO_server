@@ -2,8 +2,8 @@
     "matches": [
         {
             "uniqueId": 1,
-            "team1": "Gazou /Assidigbey Christophe",
-            "team2": "Werner Jolan/Vice gros cuisseau ",
+            "team1": "Gazou/Chris",
+            "team2": "Jolan/Rémi",
             "score": "0:0",
             "over": 0,
             "level": 0,
@@ -11,8 +11,8 @@
         },
         {
             "uniqueId": 2,
-            "team1": "Inès Leduc/Willy",
-            "team2": "Ugo/Alexis Prompsaud",
+            "team1": "Inès/Willy",
+            "team2": "Ugo/Prompsaud",
             "score": "0:0",
             "over": 0,
             "level": 0,
@@ -20,8 +20,8 @@
         },
         {
             "uniqueId": 3,
-            "team1": "Gratiant Chloé /José",
-            "team2": "Vinot Thomas/Shmavosaure Brown",
+            "team1": "Chloé/José",
+            "team2": "Thomas/Shmave",
             "score": "0:0",
             "over": 0,
             "level": 0,
@@ -29,8 +29,8 @@
         },
         {
             "uniqueId": 4,
-            "team1": "Khaladji Emma/Pierrick",
-            "team2": "Lucas/Medrano Johan",
+            "team1": "Emma/Pierrick",
+            "team2": "Lucas/Johan",
             "score": "0:0",
             "over": 0,
             "level": 0,
@@ -38,8 +38,8 @@
         },
         {
             "uniqueId": 5,
-            "team1": "Charlène Fourot /Maouhoub Quentin",
-            "team2": "Lapinou/Del Cerro Mathias",
+            "team1": "Charlène /Quentin",
+            "team2": "Lapinou/Mathias",
             "score": "0:0",
             "over": 0,
             "level": 0,
@@ -47,7 +47,7 @@
         },
         {
             "uniqueId": 6,
-            "team1": "Babouche /Guibra",
+            "team1": "Babouche/Guibra",
             "team2": "Brice/La Guille",
             "score": "0:0",
             "over": 0,
@@ -56,8 +56,8 @@
         },
         {
             "uniqueId": 7,
-            "team1": "Tonton Toinou/Besson maxime",
-            "team2": "Lavanant Mathieu/Chataignon Mickael",
+            "team1": "Antoine/Max",
+            "team2": "Mathieu/Micka",
             "score": "0:0",
             "over": 0,
             "level": 0,
@@ -65,7 +65,7 @@
         },
         {
             "uniqueId": 8,
-            "team1": "Sam Ahizi/Girex",
+            "team1": "Sam/Girex",
             "team2": "",
             "score": "23:0",
             "over": 1,
@@ -102,7 +102,7 @@
         {
             "uniqueId": 12,
             "team1": "",
-            "team2": "Sam Ahizi/Girex",
+            "team2": "Sam/Girex",
             "score": "0:0",
             "over": 0,
             "level": 1,
@@ -138,6 +138,42 @@
     ],
     "levels": 4
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

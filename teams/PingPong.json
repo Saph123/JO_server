@@ -2,27 +2,27 @@
     "Teams": [{
         "stillingame": "True",
         "uniqueid": 1,
-        "Players": "Gazou /Del Cerro Mathias"
+        "Players": "Gazou/Mathias"
     }, {
         "stillingame": "True",
         "uniqueid": 2,
-        "Players": "Coulouvrat carol-ann/Girex"
+        "Players": "Carol-Ann/Girex"
     }, {
         "stillingame": "True",
         "uniqueid": 3,
-        "Players": "Gratiant Chloé /Shmavosaure Brown"
+        "Players": "Chloé/Shmave"
     }, {
         "stillingame": "True",
         "uniqueid": 4,
-        "Players": "MENARD Armand /Vinot Thomas"
+        "Players": "Armand/Thomas"
     }, {
         "stillingame": "True",
         "uniqueid": 5,
-        "Players": "Chataignon Mickael/Guibra"
+        "Players": "Micka/Guibra"
     }, {
         "stillingame": "True",
         "uniqueid": 6,
-        "Players": "Faure Béranger /Werner Jolan"
+        "Players": "Béranger/Jolan"
     }, {
         "stillingame": "True",
         "uniqueid": 7,
@@ -30,21 +30,57 @@
     }, {
         "stillingame": "True",
         "uniqueid": 8,
-        "Players": "Vice gros cuisseau /Lapinou"
+        "Players": "Rémi/Lapinou"
     }, {
         "stillingame": "True",
         "uniqueid": 9,
-        "Players": "Maouhoub Quentin/Assidigbey Christophe"
+        "Players": "Quentin/Chris"
     }, {
         "stillingame": "True",
         "uniqueid": 10,
-        "Players": "Besson maxime/Pierrick"
+        "Players": "Max/Pierrick"
     }, {
         "stillingame": "True",
         "uniqueid": 11,
-        "Players": "Medrano Johan/José"
+        "Players": "Johan/José"
     }]
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

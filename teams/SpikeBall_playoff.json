@@ -2,8 +2,8 @@
     "matches": [
         {
             "uniqueId": 1,
-            "team1": "Khaladji Emma/Besson maxime",
-            "team2": "Shmavosaure Brown/Brice",
+            "team1": "Emma/Max",
+            "team2": "Shmave/Brice",
             "score": "0:0",
             "over": 0,
             "level": 0,
@@ -11,7 +11,7 @@
         },
         {
             "uniqueId": 2,
-            "team1": "Inès Leduc/Vice gros cuisseau ",
+            "team1": "Inès/Rémi",
             "team2": "Guibra/Florent ",
             "score": "0:0",
             "over": 0,
@@ -20,8 +20,8 @@
         },
         {
             "uniqueId": 3,
-            "team1": "Sam Ahizi/Willy",
-            "team2": "Tonton Toinou/Girex",
+            "team1": "Sam/Willy",
+            "team2": "Antoine/Girex",
             "score": "0:0",
             "over": 0,
             "level": 0,
@@ -29,8 +29,8 @@
         },
         {
             "uniqueId": 4,
-            "team1": "Babouche /Assidigbey Christophe",
-            "team2": "Del Cerro Mathias/Boolbi",
+            "team1": "Babouche/Chris",
+            "team2": "Mathias/Boolbi",
             "score": "0:0",
             "over": 0,
             "level": 0,
@@ -38,8 +38,8 @@
         },
         {
             "uniqueId": 5,
-            "team1": "Chataignon Mickael/MENARD Armand ",
-            "team2": "Gazou /Lapinou",
+            "team1": "Micka/Armand",
+            "team2": "Gazou/Lapinou",
             "score": "0:0",
             "over": 0,
             "level": 0,
@@ -47,8 +47,8 @@
         },
         {
             "uniqueId": 6,
-            "team1": "Werner Jolan/Alexis Prompsaud",
-            "team2": "Medrano Johan/Coulouvrat carol-ann",
+            "team1": "Jolan/Prompsaud",
+            "team2": "Johan/Carol-Ann",
             "score": "0:0",
             "over": 0,
             "level": 0,
@@ -56,7 +56,7 @@
         },
         {
             "uniqueId": 7,
-            "team1": "La Guille/Vinot Thomas",
+            "team1": "La Guille/Thomas",
             "team2": "",
             "score": "23:0",
             "over": 1,
@@ -101,7 +101,7 @@
         },
         {
             "uniqueId": 12,
-            "team1": "La Guille/Vinot Thomas",
+            "team1": "La Guille/Thomas",
             "team2": "Ugo/José",
             "score": "0:0",
             "over": 0,
@@ -138,6 +138,42 @@
     ],
     "levels": 4
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,19 +1,19 @@
 {
     "matches": [{
         "uniqueId": 1,
-        "team1": "Khaladji Emma/Maouhoub Quentin",
-        "team2": "Sam Ahizi/Girex",
-        "team3": "Besson Maxime/Ugo",
-        "team4": "Vice gros cuisseau /Tonton Toinou",
+        "team1": "Emma/Quentin",
+        "team2": "Sam/Girex",
+        "team3": "Max/Ugo",
+        "team4": "Rémi/Antoine",
         "score": "0:0",
         "over": 0,
         "level": 0,
         "nextmatch": "3:A,3:B"
     }, {
         "uniqueId": 2,
-        "team1": "Florent /Shmavosaure Brown",
-        "team2": "Corne Hugo/Del Cerro Mathias",
-        "team3": "Lavanant Mathieu/Faure Béranger ",
+        "team1": "Florent /Shmave",
+        "team2": "Hugo/Mathias",
+        "team3": "Mathieu/Béranger",
         "team4": "Guibra/Lapinou",
         "score": "0:0",
         "over": 0,
@@ -32,6 +32,42 @@
     }],
     "levels": 2
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

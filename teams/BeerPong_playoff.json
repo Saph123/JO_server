@@ -1,16 +1,16 @@
 {
     "matches": [{
         "uniqueId": 1,
-        "team1": "Gratiant Chloé /Chataignon Mickael",
-        "team2": "MENARD Armand /Brice",
+        "team1": "Chloé/Micka",
+        "team2": "Armand/Brice",
         "score": "0:0",
         "over": 0,
         "level": 0,
         "nextmatch": "17:A"
     }, {
         "uniqueId": 2,
-        "team1": "Babouche /Girex",
-        "team2": "Besson maxime/La Guille",
+        "team1": "Babouche/Girex",
+        "team2": "Max/La Guille",
         "score": "0:0",
         "over": 0,
         "level": 0,
@@ -25,7 +25,7 @@
         "nextmatch": "18:A"
     }, {
         "uniqueId": 4,
-        "team1": "Khaladji Emma/José",
+        "team1": "Emma/José",
         "team2": "",
         "score": "0:0",
         "over": 1,
@@ -33,7 +33,7 @@
         "nextmatch": "18:B"
     }, {
         "uniqueId": 5,
-        "team1": "Coulouvrat carol-ann/Shmavosaure Brown",
+        "team1": "Carol-Ann/Shmave",
         "team2": "",
         "score": "0:0",
         "over": 1,
@@ -41,7 +41,7 @@
         "nextmatch": "19:A"
     }, {
         "uniqueId": 6,
-        "team1": "Gazou /Vice gros cuisseau ",
+        "team1": "Gazou/Rémi",
         "team2": "",
         "score": "0:0",
         "over": 1,
@@ -49,7 +49,7 @@
         "nextmatch": "19:B"
     }, {
         "uniqueId": 7,
-        "team1": "Pierrick/Werner Jolan",
+        "team1": "Pierrick/Jolan",
         "team2": "",
         "score": "0:0",
         "over": 1,
@@ -57,7 +57,7 @@
         "nextmatch": "20:A"
     }, {
         "uniqueId": 8,
-        "team1": "Corne Hugo/Del Cerro Mathias",
+        "team1": "Hugo/Mathias",
         "team2": "",
         "score": "0:0",
         "over": 1,
@@ -65,7 +65,7 @@
         "nextmatch": "20:B"
     }, {
         "uniqueId": 9,
-        "team1": "Lucas/Tonton Toinou",
+        "team1": "Lucas/Antoine",
         "team2": "",
         "score": "0:0",
         "over": 1,
@@ -73,7 +73,7 @@
         "nextmatch": "21:A"
     }, {
         "uniqueId": 10,
-        "team1": "Florian Jehannault /Faure Béranger ",
+        "team1": "Florian/Béranger",
         "team2": "",
         "score": "0:0",
         "over": 1,
@@ -81,7 +81,7 @@
         "nextmatch": "21:B"
     }, {
         "uniqueId": 11,
-        "team1": "Maouhoub Quentin/Michael Sansak",
+        "team1": "Quentin/Mich",
         "team2": "",
         "score": "0:0",
         "over": 1,
@@ -89,7 +89,7 @@
         "nextmatch": "22:A"
     }, {
         "uniqueId": 12,
-        "team1": "Medrano Johan/Willy",
+        "team1": "Johan/Willy",
         "team2": "",
         "score": "0:0",
         "over": 1,
@@ -97,7 +97,7 @@
         "nextmatch": "22:B"
     }, {
         "uniqueId": 13,
-        "team1": "Alexis Prompsaud/Guibra",
+        "team1": "Prompsaud/Guibra",
         "team2": "",
         "score": "0:0",
         "over": 1,
@@ -105,7 +105,7 @@
         "nextmatch": "23:A"
     }, {
         "uniqueId": 14,
-        "team1": "Lavanant Mathieu/Sam Ahizi",
+        "team1": "Mathieu/Sam",
         "team2": "",
         "score": "0:0",
         "over": 1,
@@ -121,7 +121,7 @@
         "nextmatch": "24:A"
     }, {
         "uniqueId": 16,
-        "team1": "Florent /Vinot Thomas",
+        "team1": "Florent /Thomas",
         "team2": "",
         "score": "0:0",
         "over": 1,
@@ -249,6 +249,42 @@
         "nextmatch": ""
     }]
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

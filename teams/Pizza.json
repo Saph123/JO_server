@@ -3,7 +3,7 @@
         {
             "stillingame": "True",
             "uniqueid": 1,
-            "Players": "Gratiant Chloé /Tonton Toinou",
+            "Players": "Chloé/Antoine",
             "rank": 0,
             "score": "",
             "time": ""
@@ -11,7 +11,7 @@
         {
             "stillingame": "True",
             "uniqueid": 2,
-            "Players": "Babouche /Medrano Johan",
+            "Players": "Babouche/Johan",
             "rank": 0,
             "score": "",
             "time": ""
@@ -19,7 +19,7 @@
         {
             "stillingame": "True",
             "uniqueid": 3,
-            "Players": "Gazou /Vinot Thomas",
+            "Players": "Gazou/Thomas",
             "rank": 0,
             "score": "",
             "time": ""
@@ -27,7 +27,7 @@
         {
             "stillingame": "True",
             "uniqueid": 4,
-            "Players": "Khaladji Emma/Sam Ahizi",
+            "Players": "Emma/Sam",
             "rank": 0,
             "score": "",
             "time": ""
@@ -35,7 +35,7 @@
         {
             "stillingame": "True",
             "uniqueid": 5,
-            "Players": "Inès Leduc/Besson maxime",
+            "Players": "Inès/Max",
             "rank": 0,
             "score": "",
             "time": ""
@@ -43,7 +43,7 @@
         {
             "stillingame": "True",
             "uniqueid": 6,
-            "Players": "Coulouvrat carol-ann/Ugo",
+            "Players": "Carol-Ann/Ugo",
             "rank": 0,
             "score": "",
             "time": ""
@@ -51,7 +51,7 @@
         {
             "stillingame": "True",
             "uniqueid": 7,
-            "Players": "Werner Jolan/Guibra",
+            "Players": "Jolan/Guibra",
             "rank": 0,
             "score": "",
             "time": ""
@@ -59,7 +59,7 @@
         {
             "stillingame": "True",
             "uniqueid": 8,
-            "Players": "Faure Béranger /Del Cerro Mathias",
+            "Players": "Béranger/Mathias",
             "rank": 0,
             "score": "",
             "time": ""
@@ -75,13 +75,49 @@
         {
             "stillingame": "True",
             "uniqueid": 10,
-            "Players": "Vice gros cuisseau ",
+            "Players": "Rémi",
             "rank": 0,
             "score": "",
             "time": ""
         }
     ]
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

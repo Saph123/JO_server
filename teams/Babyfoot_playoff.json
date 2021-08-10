@@ -2,8 +2,8 @@
     "matches": [
         {
             "uniqueId": 1,
-            "team1": "Inès Leduc/Florent ",
-            "team2": "Vinot Thomas/José",
+            "team1": "Inès/Florent ",
+            "team2": "Thomas/José",
             "score": "0:0",
             "over": 0,
             "level": 0,
@@ -11,7 +11,7 @@
         },
         {
             "uniqueId": 2,
-            "team1": "Coulouvrat carol-ann/Chataignon Mickael",
+            "team1": "Carol-Ann/Micka",
             "team2": "Pierrick/Lapinou",
             "score": "0:0",
             "over": 0,
@@ -20,8 +20,8 @@
         },
         {
             "uniqueId": 3,
-            "team1": "Mimo/Michael Sansak",
-            "team2": "Girex/Medrano Johan",
+            "team1": "Mimo/Mich",
+            "team2": "Girex/Johan",
             "score": "0:0",
             "over": 0,
             "level": 0,
@@ -29,8 +29,8 @@
         },
         {
             "uniqueId": 4,
-            "team1": "Gazou /Shmavosaure Brown",
-            "team2": "Tonton Toinou/Vice gros cuisseau ",
+            "team1": "Gazou/Shmave",
+            "team2": "Antoine/Rémi",
             "score": "0:0",
             "over": 0,
             "level": 0,
@@ -47,7 +47,7 @@
         },
         {
             "uniqueId": 6,
-            "team1": "Corne Hugo/Werner Jolan",
+            "team1": "Hugo/Jolan",
             "team2": "",
             "score": "23:0",
             "over": 1,
@@ -56,7 +56,7 @@
         },
         {
             "uniqueId": 7,
-            "team1": "Ugo/Del Cerro Mathias",
+            "team1": "Ugo/Mathias",
             "team2": "",
             "score": "23:0",
             "over": 1,
@@ -65,7 +65,7 @@
         },
         {
             "uniqueId": 8,
-            "team1": "Alexis Prompsaud/Florian Jehannault ",
+            "team1": "Prompsaud/Florian",
             "team2": "",
             "score": "23:0",
             "over": 1,
@@ -93,7 +93,7 @@
         {
             "uniqueId": 11,
             "team1": "La Guille/Guibra",
-            "team2": "Corne Hugo/Werner Jolan",
+            "team2": "Hugo/Jolan",
             "score": "0:0",
             "over": 0,
             "level": 1,
@@ -101,8 +101,8 @@
         },
         {
             "uniqueId": 12,
-            "team1": "Ugo/Del Cerro Mathias",
-            "team2": "Alexis Prompsaud/Florian Jehannault ",
+            "team1": "Ugo/Mathias",
+            "team2": "Prompsaud/Florian",
             "score": "0:0",
             "over": 0,
             "level": 1,
@@ -138,6 +138,42 @@
     ],
     "levels": 4
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

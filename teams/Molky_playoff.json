@@ -2,8 +2,8 @@
     "matches": [
         {
             "uniqueId": 1,
-            "team1": "Babouche /Florian Jehannault ",
-            "team2": "Charlène Fourot /Vinot Thomas",
+            "team1": "Babouche/Florian",
+            "team2": "Charlène /Thomas",
             "score": "0:0",
             "over": 0,
             "level": 0,
@@ -11,8 +11,8 @@
         },
         {
             "uniqueId": 2,
-            "team1": "Inès Leduc/Maouhoub Quentin",
-            "team2": "Brice/Sam Ahizi",
+            "team1": "Inès/Quentin",
+            "team2": "Brice/Sam",
             "score": "0:0",
             "over": 0,
             "level": 0,
@@ -20,8 +20,8 @@
         },
         {
             "uniqueId": 3,
-            "team1": "Gratiant Chloé /MENARD Armand ",
-            "team2": "Werner Jolan/Alexis Prompsaud",
+            "team1": "Chloé/Armand",
+            "team2": "Jolan/Prompsaud",
             "score": "0:0",
             "over": 0,
             "level": 0,
@@ -29,7 +29,7 @@
         },
         {
             "uniqueId": 4,
-            "team1": "Khaladji Emma/Willy",
+            "team1": "Emma/Willy",
             "team2": "",
             "score": "23:0",
             "over": 1,
@@ -48,7 +48,7 @@
         {
             "uniqueId": 6,
             "team1": "",
-            "team2": "Khaladji Emma/Willy",
+            "team2": "Emma/Willy",
             "score": "0:0",
             "over": 0,
             "level": 1,
@@ -66,6 +66,42 @@
     ],
     "levels": 3
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

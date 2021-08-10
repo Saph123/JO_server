@@ -2,21 +2,21 @@
     "groups": [{
         "name": "A",
         "teams": [{
-            "name": "Gazou /Besson maxime/Ugo/Lapinou/Sam Ahizi",
+            "name": "Gazou/Max/Ugo/Lapinou/Sam",
             "wins": 0,
             "played": 0,
             "loses": 0,
             "points": 0,
             "diff": 0
         }, {
-            "name": "Babouche /Del Cerro Mathias/MENARD Armand /Vinot Thomas/Boolbi",
+            "name": "Babouche/Mathias/Armand/Thomas/Boolbi",
             "wins": 0,
             "played": 0,
             "loses": 0,
             "points": 0,
             "diff": 0
         }, {
-            "name": "Medrano Johan/Lavanant Mathieu/Werner Jolan/Vice gros cuisseau /José",
+            "name": "Johan/Mathieu/Jolan/Rémi/José",
             "wins": 0,
             "played": 0,
             "loses": 0,
@@ -28,22 +28,22 @@
         "team_number": 3,
         "matches": [{
             "uniqueId": 1,
-            "team1": "Gazou /Besson maxime/Ugo/Lapinou/Sam Ahizi",
-            "team2": "Babouche /Del Cerro Mathias/MENARD Armand /Vinot Thomas/Boolbi",
+            "team1": "Gazou/Max/Ugo/Lapinou/Sam",
+            "team2": "Babouche/Mathias/Armand/Thomas/Boolbi",
             "score": "0:0",
             "over": 0,
             "level": 0
         }, {
             "uniqueId": 2,
-            "team1": "Gazou /Besson maxime/Ugo/Lapinou/Sam Ahizi",
-            "team2": "Medrano Johan/Lavanant Mathieu/Werner Jolan/Vice gros cuisseau /José",
+            "team1": "Gazou/Max/Ugo/Lapinou/Sam",
+            "team2": "Johan/Mathieu/Jolan/Rémi/José",
             "score": "0:0",
             "over": 0,
             "level": 0
         }, {
             "uniqueId": 3,
-            "team1": "Babouche /Del Cerro Mathias/MENARD Armand /Vinot Thomas/Boolbi",
-            "team2": "Medrano Johan/Lavanant Mathieu/Werner Jolan/Vice gros cuisseau /José",
+            "team1": "Babouche/Mathias/Armand/Thomas/Boolbi",
+            "team2": "Johan/Mathieu/Jolan/Rémi/José",
             "score": "0:0",
             "over": 0,
             "level": 0
@@ -51,21 +51,21 @@
     }, {
         "name": "B",
         "teams": [{
-            "name": "Gratiant Chloé /Willy/Florent /Maouhoub Quentin/Shmavosaure Brown",
+            "name": "Chloé/Willy/Florent /Quentin/Shmave",
             "wins": 0,
             "played": 0,
             "loses": 0,
             "points": 0,
             "diff": 0
         }, {
-            "name": "Girex/Chataignon Mickael/Assidigbey Christophe/Tonton Toinou/Alexis Prompsaud",
+            "name": "Girex/Micka/Chris/Antoine/Prompsaud",
             "wins": 0,
             "played": 0,
             "loses": 0,
             "points": 0,
             "diff": 0
         }, {
-            "name": "Guibra/La Guille/Lucas/Pierrick/Coulouvrat carol-ann",
+            "name": "Guibra/La Guille/Lucas/Pierrick/Carol-Ann",
             "wins": 0,
             "played": 0,
             "loses": 0,
@@ -77,28 +77,64 @@
         "team_number": 3,
         "matches": [{
             "uniqueId": 4,
-            "team1": "Gratiant Chloé /Willy/Florent /Maouhoub Quentin/Shmavosaure Brown",
-            "team2": "Girex/Chataignon Mickael/Assidigbey Christophe/Tonton Toinou/Alexis Prompsaud",
+            "team1": "Chloé/Willy/Florent /Quentin/Shmave",
+            "team2": "Girex/Micka/Chris/Antoine/Prompsaud",
             "score": "0:0",
             "over": 0,
             "level": 0
         }, {
             "uniqueId": 5,
-            "team1": "Gratiant Chloé /Willy/Florent /Maouhoub Quentin/Shmavosaure Brown",
-            "team2": "Guibra/La Guille/Lucas/Pierrick/Coulouvrat carol-ann",
+            "team1": "Chloé/Willy/Florent /Quentin/Shmave",
+            "team2": "Guibra/La Guille/Lucas/Pierrick/Carol-Ann",
             "score": "0:0",
             "over": 0,
             "level": 0
         }, {
             "uniqueId": 6,
-            "team1": "Girex/Chataignon Mickael/Assidigbey Christophe/Tonton Toinou/Alexis Prompsaud",
-            "team2": "Guibra/La Guille/Lucas/Pierrick/Coulouvrat carol-ann",
+            "team1": "Girex/Micka/Chris/Antoine/Prompsaud",
+            "team2": "Guibra/La Guille/Lucas/Pierrick/Carol-Ann",
             "score": "0:0",
             "over": 0,
             "level": 0
         }]
     }]
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
