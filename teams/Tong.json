@@ -1,183 +1,227 @@
 {
-    "Teams": [
+    "Series": [
         {
-            "stillingame": "True",
-            "uniqueid": 1,
-            "Players": "Gazou",
-            "rank": 0,
-            "score": "",
-            "time": ""
-        },
-        {
-            "stillingame": "True",
-            "uniqueid": 2,
-            "Players": "Babouche",
-            "rank": 0,
-            "score": "",
-            "time": ""
-        },
-        {
-            "stillingame": "True",
-            "uniqueid": 3,
-            "Players": "Mimo",
-            "rank": 0,
-            "score": "",
-            "time": ""
-        },
-        {
-            "stillingame": "True",
-            "uniqueid": 4,
-            "Players": "Emma",
-            "rank": 0,
-            "score": "",
-            "time": ""
-        },
-        {
-            "stillingame": "True",
-            "uniqueid": 5,
-            "Players": "Inès",
-            "rank": 0,
-            "score": "",
-            "time": ""
-        },
-        {
-            "stillingame": "True",
-            "uniqueid": 6,
-            "Players": "Willy",
-            "rank": 0,
-            "score": "",
-            "time": ""
-        },
-        {
-            "stillingame": "True",
-            "uniqueid": 7,
-            "Players": "Guibra",
-            "rank": 0,
-            "score": "",
-            "time": ""
-        },
-        {
-            "stillingame": "True",
-            "uniqueid": 8,
-            "Players": "Boolbi",
-            "rank": 0,
-            "score": "",
-            "time": ""
-        },
-        {
-            "stillingame": "True",
-            "uniqueid": 9,
-            "Players": "Johan",
-            "rank": 0,
-            "score": "",
-            "time": ""
-        },
-        {
-            "stillingame": "True",
-            "uniqueid": 10,
-            "Players": "Béranger",
-            "rank": 0,
-            "score": "",
-            "time": ""
-        },
-        {
-            "stillingame": "True",
-            "uniqueid": 11,
-            "Players": "Lapinou",
-            "rank": 0,
-            "score": "",
-            "time": ""
-        },
-        {
-            "stillingame": "True",
-            "uniqueid": 12,
-            "Players": "Thomas",
-            "rank": 0,
-            "score": "",
-            "time": ""
-        },
-        {
-            "stillingame": "True",
-            "uniqueid": 13,
-            "Players": "Girex",
-            "rank": 0,
-            "score": "",
-            "time": ""
-        },
-        {
-            "stillingame": "True",
-            "uniqueid": 14,
-            "Players": "Sam",
-            "rank": 0,
-            "score": "",
-            "time": ""
-        },
-        {
-            "stillingame": "True",
-            "uniqueid": 15,
-            "Players": "Ugo",
-            "rank": 0,
-            "score": "",
-            "time": ""
-        },
-        {
-            "stillingame": "True",
-            "uniqueid": 16,
-            "Players": "La Guille",
-            "rank": 0,
-            "score": "",
-            "time": ""
-        },
-        {
-            "stillingame": "True",
-            "uniqueid": 17,
-            "Players": "Antoine",
-            "rank": 0,
-            "score": "",
-            "time": ""
-        },
-        {
-            "stillingame": "True",
-            "uniqueid": 18,
-            "Players": "José",
-            "rank": 0,
-            "score": "",
-            "time": ""
-        },
-        {
-            "stillingame": "True",
-            "uniqueid": 19,
-            "Players": "Jolan",
-            "rank": 0,
-            "score": "",
-            "time": ""
-        },
-        {
-            "stillingame": "True",
-            "uniqueid": 20,
-            "Players": "Micka",
-            "rank": 0,
-            "score": "",
-            "time": ""
-        },
-        {
-            "stillingame": "True",
-            "uniqueid": 21,
-            "Players": "Florent ",
-            "rank": 0,
-            "score": "",
-            "time": ""
-        },
-        {
-            "stillingame": "True",
-            "uniqueid": 22,
-            "Players": "Mathias",
-            "rank": 0,
-            "score": "",
-            "time": ""
+            "Name": "Final",
+            "Teams": [
+                {
+                    "uniqueid": 1,
+                    "Players": "Gazou",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 2,
+                    "Players": "Babouche",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 3,
+                    "Players": "Mimo",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 4,
+                    "Players": "Emma",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 5,
+                    "Players": "Inès",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 6,
+                    "Players": "Willy",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 7,
+                    "Players": "Guibra",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 8,
+                    "Players": "Boolbi",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 9,
+                    "Players": "Johan",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 10,
+                    "Players": "Béranger",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 11,
+                    "Players": "Lapinou",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 12,
+                    "Players": "Thomas",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 13,
+                    "Players": "Girex",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 14,
+                    "Players": "Sam",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 15,
+                    "Players": "Ugo",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 16,
+                    "Players": "La Guille",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 17,
+                    "Players": "Antoine",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 18,
+                    "Players": "José",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 19,
+                    "Players": "Jolan",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 20,
+                    "Players": "Micka",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 21,
+                    "Players": "Florent",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 22,
+                    "Players": "Mathias",
+                    "rank": 0,
+                    "score": ""
+                }
+            ],
+            "Selected": 0,
+            "NextSerie": ""
         }
     ]
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

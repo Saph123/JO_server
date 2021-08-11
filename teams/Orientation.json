@@ -1,26 +1,155 @@
 {
-    "Teams": [{
-        "stillingame": "True",
-        "uniqueid": 1,
-        "Players": "Ugo/José/Mathieu/Gazou/Mathias/Micka"
-    }, {
-        "stillingame": "True",
-        "uniqueid": 2,
-        "Players": "Girex/La Guille/Willy/Quentin/Lucas/Carol-Ann"
-    }, {
-        "stillingame": "True",
-        "uniqueid": 3,
-        "Players": "Florent /Chloé/Prompsaud/Emma/Sam/Hugo"
-    }, {
-        "stillingame": "True",
-        "uniqueid": 4,
-        "Players": "Florian/Thomas/Boolbi/Inès/Johan/Lapinou"
-    }, {
-        "stillingame": "True",
-        "uniqueid": 5,
-        "Players": "Antoine/Guibra/Mimo/Armand/Chris/Jolan"
-    }]
+    "Series": [{
+        "Name": "Final",
+        "Teams": [{
+            "uniqueid": 1,
+            "Players": "Ugo/José/Mathieu/Gazou/Mathias/Micka",
+            "rank": 0
+            }, {
+            "uniqueid": 2,
+            "Players": "Girex/La Guille/Willy/Quentin/Lucas/Carol-Ann",
+            "rank": 0
+            }, {
+            "uniqueid": 3,
+            "Players": "Florent/Chloé/Prompsaud/Emma/Sam/Hugo/Patrice",
+            "rank": 0
+            }, {
+            "uniqueid": 4,
+            "Players": "Florian/Thomas/Boolbi/Inès/Johan/Lapinou",
+            "rank": 0
+            }, {
+            "uniqueid": 5,
+            "Players": "Antoine/Guibra/Mimo/Armand/Chris/Jolan",
+            "rank": 0
+            }],
+        "Selected": 0,
+        "NextSerie": ""
+        }]
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

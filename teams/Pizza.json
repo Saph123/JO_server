@@ -1,87 +1,159 @@
 {
-    "Teams": [
+    "Series": [
         {
-            "stillingame": "True",
-            "uniqueid": 1,
-            "Players": "Chloé/Antoine",
-            "rank": 0,
-            "score": "",
-            "time": ""
-        },
-        {
-            "stillingame": "True",
-            "uniqueid": 2,
-            "Players": "Babouche/Johan",
-            "rank": 0,
-            "score": "",
-            "time": ""
-        },
-        {
-            "stillingame": "True",
-            "uniqueid": 3,
-            "Players": "Gazou/Thomas",
-            "rank": 0,
-            "score": "",
-            "time": ""
-        },
-        {
-            "stillingame": "True",
-            "uniqueid": 4,
-            "Players": "Emma/Sam",
-            "rank": 0,
-            "score": "",
-            "time": ""
-        },
-        {
-            "stillingame": "True",
-            "uniqueid": 5,
-            "Players": "Inès/Max",
-            "rank": 0,
-            "score": "",
-            "time": ""
-        },
-        {
-            "stillingame": "True",
-            "uniqueid": 6,
-            "Players": "Carol-Ann/Ugo",
-            "rank": 0,
-            "score": "",
-            "time": ""
-        },
-        {
-            "stillingame": "True",
-            "uniqueid": 7,
-            "Players": "Jolan/Guibra",
-            "rank": 0,
-            "score": "",
-            "time": ""
-        },
-        {
-            "stillingame": "True",
-            "uniqueid": 8,
-            "Players": "Béranger/Mathias",
-            "rank": 0,
-            "score": "",
-            "time": ""
-        },
-        {
-            "stillingame": "True",
-            "uniqueid": 9,
-            "Players": "Lapinou/Brice",
-            "rank": 0,
-            "score": "",
-            "time": ""
-        },
-        {
-            "stillingame": "True",
-            "uniqueid": 10,
-            "Players": "Rémi",
-            "rank": 0,
-            "score": "",
-            "time": ""
+            "Name": "Final",
+            "Teams": [
+                {
+                    "uniqueid": 1,
+                    "Players": "Chloé/Antoine",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 2,
+                    "Players": "Babouche/Johan",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 3,
+                    "Players": "Gazou/Thomas",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 4,
+                    "Players": "Emma/Sam",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 5,
+                    "Players": "Inès/Max",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 6,
+                    "Players": "Carol-Ann/Ugo",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 7,
+                    "Players": "Jolan/Guibra",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 8,
+                    "Players": "Béranger/Mathias",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 9,
+                    "Players": "Lapinou/Brice",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 10,
+                    "Players": "Rémi/Patrice",
+                    "rank": 0,
+                    "score": ""
+                }
+            ],
+            "Selected": 0,
+            "NextSerie": ""
         }
     ]
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

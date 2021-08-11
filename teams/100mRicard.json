@@ -1,38 +1,181 @@
 {
-    "Teams": [{
-        "stillingame": "True",
-        "uniqueid": 1,
-        "Players": "Emma/Quentin"
-    }, {
-        "stillingame": "True",
-        "uniqueid": 2,
-        "Players": "Florent /Shmave"
-    }, {
-        "stillingame": "True",
-        "uniqueid": 3,
-        "Players": "Sam/Girex"
-    }, {
-        "stillingame": "True",
-        "uniqueid": 4,
-        "Players": "Hugo/Mathias"
-    }, {
-        "stillingame": "True",
-        "uniqueid": 5,
-        "Players": "Max/Ugo"
-    }, {
-        "stillingame": "True",
-        "uniqueid": 6,
-        "Players": "Mathieu/Béranger"
-    }, {
-        "stillingame": "True",
-        "uniqueid": 7,
-        "Players": "Rémi/Antoine"
-    }, {
-        "stillingame": "True",
-        "uniqueid": 8,
-        "Players": "Guibra/Lapinou"
+    "Series": [{
+        "Name": "Semi1",
+        "Teams": [{
+            "Players": "Emma/Quentin",
+            "rank": 0
+        },{
+            "Players": "Sam/Girex",
+            "rank": 0
+        },{
+            "Players": "Max/Ugo",
+            "rank": 0
+        },{
+            "Players": "Rémi/Antoine",
+            "rank": 0
+        }],
+        "Selected": 2,
+        "NextSerie": "Final:A,Final:B"
+    },{
+        "Name": "Semi2",
+        "Teams": [{
+            "Players": "Florent/Shmave",
+            "rank": 0
+        },{
+            "Players": "Hugo/Mathias",
+            "rank": 0
+        },{
+            "Players": "Mathieu/Béranger",
+            "rank": 0
+        },{
+            "Players": "Guibra/Lapinou",
+            "rank": 0
+        }],
+        "Selected": 2,
+        "NextSerie": "Final:C,Final:D"
+    },{
+        "Name": "Final",
+        "Teams": [{
+            "Players": "",
+            "rank": 0
+        },{
+            "Players": "",
+            "rank": 0
+        },{
+            "Players": "",
+            "rank": 0
+        },{
+            "Players": "",
+            "rank": 0
+        }],
+        "Selected": 0,
+        "NextSerie": ""
     }]
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,8 +1,187 @@
-{"groups": [{"name": "A", "teams": [{"name": "Gazou/Johan/Lucas/Max", "wins": 0, "played": 1, "loses": 1, "points": 0, "diff": -10}, {"name": "Chloé/La Guille/Béranger/Chris", "wins": 1, "played": 1, "loses": 0, "points": 3, "diff": 10}, {"name": "Emma/Pierrick/Jolan/Florent ", "wins": 0, "played": 0, "loses": 0, "points": 0, "diff": 0}, {"name": "Quentin/Rémi/Mich/Girex", "wins": 0, "played": 0, "loses": 0, "points": 0, "diff": 0}], "over": 0, "level": 0, "team_number": 4, "matches": [{"uniqueId": 1, "team1": "Gazou/Johan/Lucas/Max", "team2": "Chloé/La Guille/Béranger/Chris", "score": "0:10", "over": 2, "level": 0}, {"uniqueId": 2, "team1": "Gazou/Johan/Lucas/Max", "team2": "Emma/Pierrick/Jolan/Florent ", "score": "0:0", "over": 0, "level": 0}, {"uniqueId": 3, "team1": "Gazou/Johan/Lucas/Max", "team2": "Quentin/Rémi/Mich/Girex", "score": "0:0", "over": 0, "level": 0}, {"uniqueId": 4, "team1": "Chloé/La Guille/Béranger/Chris", "team2": "Emma/Pierrick/Jolan/Florent ", "score": "0:0", "over": 0, "level": 0}, {"uniqueId": 5, "team1": "Chloé/La Guille/Béranger/Chris", "team2": "Quentin/Rémi/Mich/Girex", "score": "0:0", "over": 0, "level": 0}, {"uniqueId": 6, "team1": "Emma/Pierrick/Jolan/Florent ", "team2": "Quentin/Rémi/Mich/Girex", "score": "0:0", "over": 0, "level": 0}]}, {"name": "B", "teams": [{"name": "Inès/Sam/Micka/Antoine", "wins": 0, "played": 0, "loses": 0, "points": 0, "diff": 0}, {"name": "Carol-Ann/Ugo/Guibra/Thomas", "wins": 0, "played": 0, "loses": 0, "points": 0, "diff": 0}, {"name": "Babouche/Prompsaud/Armand/Mathias", "wins": 0, "played": 0, "loses": 0, "points": 0, "diff": 0}, {"name": "Boolbi/Shmave/Willy/Lapinou", "wins": 0, "played": 0, "loses": 0, "points": 0, "diff": 0}], "over": 0, "level": 0, "team_number": 4, "matches": [{"uniqueId": 7, "team1": "Inès/Sam/Micka/Antoine", "team2": "Carol-Ann/Ugo/Guibra/Thomas", "score": "0:0", "over": 0, "level": 0}, {"uniqueId": 8, "team1": "Inès/Sam/Micka/Antoine", "team2": "Babouche/Prompsaud/Armand/Mathias", "score": "0:0", "over": 0, "level": 0}, {"uniqueId": 9, "team1": "Inès/Sam/Micka/Antoine", "team2": "Boolbi/Shmave/Willy/Lapinou", "score": "0:0", "over": 0, "level": 0}, {"uniqueId": 10, "team1": "Carol-Ann/Ugo/Guibra/Thomas", "team2": "Babouche/Prompsaud/Armand/Mathias", "score": "0:0", "over": 0, "level": 0}, {"uniqueId": 11, "team1": "Carol-Ann/Ugo/Guibra/Thomas", "team2": "Boolbi/Shmave/Willy/Lapinou", "score": "0:0", "over": 0, "level": 0}, {"uniqueId": 12, "team1": "Babouche/Prompsaud/Armand/Mathias", "team2": "Boolbi/Shmave/Willy/Lapinou", "score": "0:0", "over": 0, "level": 0}]}]}
-
-
-
-
+{
+    "groups": [
+        {
+            "name": "A",
+            "teams": [
+                {
+                    "name": "Gazou/Johan/Lucas/Max",
+                    "wins": 0,
+                    "played": 0,
+                    "loses": 0,
+                    "points": 0,
+                    "diff": 0
+                },
+                {
+                    "name": "Chloé/La Guille/Béranger/Chris",
+                    "wins": 0,
+                    "played": 0,
+                    "loses": 0,
+                    "points": 0,
+                    "diff": 0
+                },
+                {
+                    "name": "Emma/Pierrick/Jolan/Florent",
+                    "wins": 0,
+                    "played": 0,
+                    "loses": 0,
+                    "points": 0,
+                    "diff": 0
+                },
+                {
+                    "name": "Quentin/Rémi/Mich/Girex",
+                    "wins": 0,
+                    "played": 0,
+                    "loses": 0,
+                    "points": 0,
+                    "diff": 0
+                }
+            ],
+            "over": 0,
+            "level": 0,
+            "team_number": 4,
+            "matches": [
+                {
+                    "uniqueId": 1,
+                    "team1": "Gazou/Johan/Lucas/Max",
+                    "team2": "Chloé/La Guille/Béranger/Chris",
+                    "score": "0:0",
+                    "over": 0,
+                    "level": 0
+                },
+                {
+                    "uniqueId": 2,
+                    "team1": "Gazou/Johan/Lucas/Max",
+                    "team2": "Emma/Pierrick/Jolan/Florent",
+                    "score": "0:0",
+                    "over": 0,
+                    "level": 0
+                },
+                {
+                    "uniqueId": 3,
+                    "team1": "Gazou/Johan/Lucas/Max",
+                    "team2": "Quentin/Rémi/Mich/Girex",
+                    "score": "0:0",
+                    "over": 0,
+                    "level": 0
+                },
+                {
+                    "uniqueId": 4,
+                    "team1": "Chloé/La Guille/Béranger/Chris",
+                    "team2": "Emma/Pierrick/Jolan/Florent",
+                    "score": "0:0",
+                    "over": 0,
+                    "level": 0
+                },
+                {
+                    "uniqueId": 5,
+                    "team1": "Chloé/La Guille/Béranger/Chris",
+                    "team2": "Quentin/Rémi/Mich/Girex",
+                    "score": "0:0",
+                    "over": 0,
+                    "level": 0
+                },
+                {
+                    "uniqueId": 6,
+                    "team1": "Emma/Pierrick/Jolan/Florent",
+                    "team2": "Quentin/Rémi/Mich/Girex",
+                    "score": "0:0",
+                    "over": 0,
+                    "level": 0
+                }
+            ]
+        },
+        {
+            "name": "B",
+            "teams": [
+                {
+                    "name": "Inès/Sam/Micka/Antoine",
+                    "wins": 0,
+                    "played": 0,
+                    "loses": 0,
+                    "points": 0,
+                    "diff": 0
+                },
+                {
+                    "name": "Carol-Ann/Ugo/Guibra/Thomas",
+                    "wins": 0,
+                    "played": 0,
+                    "loses": 0,
+                    "points": 0,
+                    "diff": 0
+                },
+                {
+                    "name": "Babouche/Prompsaud/Armand/Mathias",
+                    "wins": 0,
+                    "played": 0,
+                    "loses": 0,
+                    "points": 0,
+                    "diff": 0
+                },
+                {
+                    "name": "Boolbi/Shmave/Willy/Lapinou",
+                    "wins": 0,
+                    "played": 0,
+                    "loses": 0,
+                    "points": 0,
+                    "diff": 0
+                }
+            ],
+            "over": 0,
+            "level": 0,
+            "team_number": 4,
+            "matches": [
+                {
+                    "uniqueId": 7,
+                    "team1": "Inès/Sam/Micka/Antoine",
+                    "team2": "Carol-Ann/Ugo/Guibra/Thomas",
+                    "score": "0:0",
+                    "over": 0,
+                    "level": 0
+                },
+                {
+                    "uniqueId": 8,
+                    "team1": "Inès/Sam/Micka/Antoine",
+                    "team2": "Babouche/Prompsaud/Armand/Mathias",
+                    "score": "0:0",
+                    "over": 0,
+                    "level": 0
+                },
+                {
+                    "uniqueId": 9,
+                    "team1": "Inès/Sam/Micka/Antoine",
+                    "team2": "Boolbi/Shmave/Willy/Lapinou",
+                    "score": "0:0",
+                    "over": 0,
+                    "level": 0
+                },
+                {
+                    "uniqueId": 10,
+                    "team1": "Carol-Ann/Ugo/Guibra/Thomas",
+                    "team2": "Babouche/Prompsaud/Armand/Mathias",
+                    "score": "0:0",
+                    "over": 0,
+                    "level": 0
+                },
+                {
+                    "uniqueId": 11,
+                    "team1": "Carol-Ann/Ugo/Guibra/Thomas",
+                    "team2": "Boolbi/Shmave/Willy/Lapinou",
+                    "score": "0:0",
+                    "over": 0,
+                    "level": 0
+                },
+                {
+                    "uniqueId": 12,
+                    "team1": "Babouche/Prompsaud/Armand/Mathias",
+                    "team2": "Boolbi/Shmave/Willy/Lapinou",
+                    "score": "0:0",
+                    "over": 0,
+                    "level": 0
+                }
+            ]
+        }
+    ]
+}
 
 
 

@@ -1,4 +1,211 @@
-{"Teams": [{"stillingame": "True", "uniqueid": 1, "Players": "Chloé", "rank": 0, "score": "", "time": ""}, {"stillingame": "True", "uniqueid": 2, "Players": "Rémi", "rank": 0, "score": "", "time": ""}, {"stillingame": "True", "uniqueid": 3, "Players": "La Guille", "rank": 0, "score": "", "time": ""}, {"stillingame": "True", "uniqueid": 4, "Players": "Armand", "rank": 0, "score": "", "time": ""}, {"stillingame": "True", "uniqueid": 5, "Players": "Florian", "rank": 0, "score": "", "time": ""}, {"stillingame": "True", "uniqueid": 6, "Players": "Lapinou", "rank": 0, "score": "", "time": ""}, {"stillingame": "True", "uniqueid": 7, "Players": "Florent ", "rank": 0, "score": "", "time": ""}, {"stillingame": "True", "uniqueid": 8, "Players": "Girex", "rank": 0, "score": "", "time": ""}, {"stillingame": "True", "uniqueid": 9, "Players": "Ugo", "rank": 0, "score": "", "time": ""}, {"stillingame": "True", "uniqueid": 10, "Players": "Brice", "rank": 0, "score": "", "time": ""}, {"stillingame": "True", "uniqueid": 11, "Players": "Prompsaud", "rank": 0, "score": "", "time": ""}, {"stillingame": "True", "uniqueid": 12, "Players": "Thomas", "rank": 0, "score": "", "time": ""}, {"stillingame": "True", "uniqueid": 13, "Players": "Pierrick", "rank": 0, "score": "", "time": ""}]}
+{
+    "Series": [
+        {
+            "Name": "Final",
+            "Teams": [
+                {
+                    "uniqueid": 1,
+                    "Players": "Chloé",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 2,
+                    "Players": "Rémi",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 3,
+                    "Players": "La Guille",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 4,
+                    "Players": "Armand",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 5,
+                    "Players": "Florian",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 6,
+                    "Players": "Lapinou",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 7,
+                    "Players": "Florent",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 8,
+                    "Players": "Girex",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 9,
+                    "Players": "Ugo",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 10,
+                    "Players": "Brice",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 11,
+                    "Players": "Prompsaud",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 12,
+                    "Players": "Thomas",
+                    "rank": 0,
+                    "score": ""
+                },
+                {
+                    "uniqueid": 13,
+                    "Players": "Pierrick",
+                    "rank": 0,
+                    "score": ""
+                }
+            ],
+            "Selected": 0,
+            "NextSerie": ""
+        }]
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

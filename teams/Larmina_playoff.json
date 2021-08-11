@@ -38,7 +38,7 @@
         },
         {
             "uniqueId": 5,
-            "team1": "Charlène /Quentin",
+            "team1": "Charlène/Quentin",
             "team2": "Lapinou/Mathias",
             "score": "0:0",
             "over": 0,
@@ -138,34 +138,6 @@
     ],
     "levels": 4
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
