@@ -87,7 +87,6 @@ class myHandler (BaseHTTPRequestHandler):
             self.end_headers()
         elif "pushmatch" in self.path:
             data = json.loads(post_data.decode('utf-8'))
-            print(data)
             username = data["username"]
             sport = data["sport"]
             if user_is_authorized(username, sport):
