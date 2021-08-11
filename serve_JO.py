@@ -55,7 +55,7 @@ class myHandler (BaseHTTPRequestHandler):
             password = hashlib.sha384(tmpdict.get("password").encode('utf-8')).hexdigest()
             cur.execute("SELECT * from users")
             for (id,user,pwd,autho,date) in cur:
-                if user==username:
+                if user.lower()==username.lower():
                     if password==pwd:
                         self.send_response(200,"sucessfull login")
                         self.send_header("Access-Control-Allow-Origin","*")
@@ -87,6 +87,7 @@ class myHandler (BaseHTTPRequestHandler):
             self.end_headers()
         elif "pushmatch" in self.path:
             data = json.loads(post_data.decode('utf-8'))
+            print(data)
             username = data["username"]
             sport = data["sport"]
             if user_is_authorized(username, sport):
