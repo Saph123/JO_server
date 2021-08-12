@@ -20,8 +20,8 @@
         },
         {
             "uniqueId": 3,
-            "team1": "Chloé/Shmave",
-            "team2": "Johan/José",
+            "team1": "Chloe/Shmave",
+            "team2": "Johan/Jose",
             "score": "0:0",
             "over": 0,
             "level": 0,
@@ -47,7 +47,7 @@
         },
         {
             "uniqueId": 6,
-            "team1": "Béranger/Jolan",
+            "team1": "Beranger/Jolan",
             "team2": "",
             "score": "23:0",
             "over": 1,
@@ -65,7 +65,7 @@
         },
         {
             "uniqueId": 8,
-            "team1": "Rémi/Lapinou",
+            "team1": "Remi/Lapinou",
             "team2": "",
             "score": "23:0",
             "over": 1,
@@ -93,7 +93,7 @@
         {
             "uniqueId": 11,
             "team1": "Micka/Guibra",
-            "team2": "Béranger/Jolan",
+            "team2": "Beranger/Jolan",
             "score": "0:0",
             "over": 0,
             "level": 1,
@@ -102,7 +102,7 @@
         {
             "uniqueId": 12,
             "team1": "La Guille/Willy",
-            "team2": "Rémi/Lapinou",
+            "team2": "Remi/Lapinou",
             "score": "0:0",
             "over": 0,
             "level": 1,
@@ -138,6 +138,130 @@
     ],
     "levels": 4
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

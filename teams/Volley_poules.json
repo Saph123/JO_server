@@ -16,7 +16,7 @@
             "points": 0,
             "diff": 0
         }, {
-            "name": "Johan/Mathieu/Jolan/Rémi/José",
+            "name": "Johan/Mathieu/Jolan/Remi/Jose",
             "wins": 0,
             "played": 0,
             "loses": 0,
@@ -36,14 +36,14 @@
         }, {
             "uniqueId": 2,
             "team1": "Gazou/Max/Ugo/Lapinou/Sam",
-            "team2": "Johan/Mathieu/Jolan/Rémi/José",
+            "team2": "Johan/Mathieu/Jolan/Remi/Jose",
             "score": "0:0",
             "over": 0,
             "level": 0
         }, {
             "uniqueId": 3,
             "team1": "Babouche/Mathias/Armand/Thomas/Boolbi",
-            "team2": "Johan/Mathieu/Jolan/Rémi/José",
+            "team2": "Johan/Mathieu/Jolan/Remi/Jose",
             "score": "0:0",
             "over": 0,
             "level": 0
@@ -51,7 +51,7 @@
     }, {
         "name": "B",
         "teams": [{
-            "name": "Chloé/Willy/Florent/Quentin/Shmave",
+            "name": "Chloe/Willy/Florent/Quentin/Shmave",
             "wins": 0,
             "played": 0,
             "loses": 0,
@@ -77,14 +77,14 @@
         "team_number": 3,
         "matches": [{
             "uniqueId": 4,
-            "team1": "Chloé/Willy/Florent/Quentin/Shmave",
+            "team1": "Chloe/Willy/Florent/Quentin/Shmave",
             "team2": "Girex/Micka/Chris/Antoine/Prompsaud",
             "score": "0:0",
             "over": 0,
             "level": 0
         }, {
             "uniqueId": 5,
-            "team1": "Chloé/Willy/Florent/Quentin/Shmave",
+            "team1": "Chloe/Willy/Florent/Quentin/Shmave",
             "team2": "Guibra/La Guille/Lucas/Pierrick/Carol-Ann",
             "score": "0:0",
             "over": 0,
@@ -99,6 +99,130 @@
         }]
     }]
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

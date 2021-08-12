@@ -3,7 +3,7 @@
         {
             "uniqueId": 1,
             "team1": "Gazou/Chris",
-            "team2": "Jolan/Rémi",
+            "team2": "Jolan/Remi",
             "score": "0:0",
             "over": 0,
             "level": 0,
@@ -11,7 +11,7 @@
         },
         {
             "uniqueId": 2,
-            "team1": "Inès/Willy",
+            "team1": "Ines/Willy",
             "team2": "Ugo/Prompsaud",
             "score": "0:0",
             "over": 0,
@@ -20,7 +20,7 @@
         },
         {
             "uniqueId": 3,
-            "team1": "Chloé/José",
+            "team1": "Chloe/Jose",
             "team2": "Thomas/Shmave",
             "score": "0:0",
             "over": 0,
@@ -38,7 +38,7 @@
         },
         {
             "uniqueId": 5,
-            "team1": "Charlène/Quentin",
+            "team1": "Charlene/Quentin",
             "team2": "Lapinou/Mathias",
             "score": "0:0",
             "over": 0,
@@ -138,6 +138,130 @@
     ],
     "levels": 4
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

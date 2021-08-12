@@ -1,205 +1,60 @@
 {
-    "Series": [{
-        "Name": "Semi1",
-        "Teams": [{
-            "Players": "Emma/Quentin",
-            "rank": 0
-        },{
-            "Players": "Sam/Girex",
-            "rank": 0
-        },{
-            "Players": "Max/Ugo",
-            "rank": 0
-        },{
-            "Players": "Rémi/Antoine",
-            "rank": 0
-        }],
-        "Selected": 2,
-        "NextSerie": "Final:A,Final:B"
-    },{
-        "Name": "Semi2",
-        "Teams": [{
-            "Players": "Florent/Shmave",
-            "rank": 0
-        },{
-            "Players": "Hugo/Mathias",
-            "rank": 0
-        },{
-            "Players": "Mathieu/Béranger",
-            "rank": 0
-        },{
-            "Players": "Guibra/Lapinou",
-            "rank": 0
-        }],
-        "Selected": 2,
-        "NextSerie": "Final:C,Final:D"
-    },{
-        "Name": "Final",
-        "Teams": [{
-            "Players": "",
-            "rank": 0
-        },{
-            "Players": "",
-            "rank": 0
-        },{
-            "Players": "",
-            "rank": 0
-        },{
-            "Players": "",
-            "rank": 0
-        }],
-        "Selected": 0,
-        "NextSerie": ""
-    }]
+    "Series": [
+        {
+            "Name": "Final",
+            "Teams": [
+            ],
+            "Selected": 0,
+            "NextSerie": -1
+        },
+        {
+            "Name": "Semi1",
+            "Teams": [
+                {
+                    "Players": "Emma/Quentin",
+                    "rank": 3
+                },
+                {
+                    "Players": "Sam/Girex",
+                    "rank": 1
+                },
+                {
+                    "Players": "Max/Ugo",
+                    "rank": 2
+                },
+                {
+                    "Players": "Remi/Antoine",
+                    "rank": 0
+                }
+            ],
+            "Selected": 2,
+            "NextSerie": 0
+        },
+        {
+            "Name": "Semi2",
+            "Teams": [
+                {
+                    "Players": "Florent/Shmave",
+                    "rank": 1
+                },
+                {
+                    "Players": "Hugo/Mathias",
+                    "rank": 2
+                },
+                {
+                    "Players": "Mathieu/Beranger",
+                    "rank": 3
+                },
+                {
+                    "Players": "Guibra/Lapinou",
+                    "rank": 0
+                }
+            ],
+            "Selected": 2,
+            "NextSerie": 0
+        }
+    ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

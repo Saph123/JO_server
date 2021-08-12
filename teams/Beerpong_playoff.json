@@ -2,7 +2,7 @@
     "matches": [
         {
             "uniqueId": 1,
-            "team1": "Chloé/Micka",
+            "team1": "Chloe/Micka",
             "team2": "Armand/Brice",
             "score": "0:0",
             "over": 0,
@@ -21,7 +21,7 @@
         {
             "uniqueId": 3,
             "team1": "Mimo/Ugo",
-            "team2": "Patrice/Inès",
+            "team2": "Patrice/Ines",
             "score": "0:0",
             "over": 0,
             "level": 0,
@@ -29,7 +29,7 @@
         },
         {
             "uniqueId": 4,
-            "team1": "Emma/José",
+            "team1": "Emma/Jose",
             "team2": "",
             "score": "23:0",
             "over": 1,
@@ -47,7 +47,7 @@
         },
         {
             "uniqueId": 6,
-            "team1": "Gazou/Rémi",
+            "team1": "Gazou/Remi",
             "team2": "",
             "score": "23:0",
             "over": 1,
@@ -83,7 +83,7 @@
         },
         {
             "uniqueId": 10,
-            "team1": "Florian/Béranger",
+            "team1": "Florian/Beranger",
             "team2": "",
             "score": "23:0",
             "over": 1,
@@ -156,7 +156,7 @@
         {
             "uniqueId": 18,
             "team1": "",
-            "team2": "Emma/José",
+            "team2": "Emma/Jose",
             "score": "0:0",
             "over": 0,
             "level": 1,
@@ -165,7 +165,7 @@
         {
             "uniqueId": 19,
             "team1": "Carol-Ann/Shmave",
-            "team2": "Gazou/Rémi",
+            "team2": "Gazou/Remi",
             "score": "0:0",
             "over": 0,
             "level": 1,
@@ -183,7 +183,7 @@
         {
             "uniqueId": 21,
             "team1": "Lucas/Antoine",
-            "team2": "Florian/Béranger",
+            "team2": "Florian/Beranger",
             "score": "0:0",
             "over": 0,
             "level": 1,
@@ -282,6 +282,130 @@
     ],
     "levels": 5
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

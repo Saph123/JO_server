@@ -1,3 +1,4 @@
+
 import copy
 import os
 import datetime
@@ -211,15 +212,17 @@ def team_to_next_step(sport, match_id):
         matches = data["matches"]
         for match in matches:
             if match["uniqueId"] == match_id:
-                if match["over"]:
-                    results = match["score"].split(":")
-                    winner = "team1" if int(results[0]) > int(results[1]) else "team2"
-                    next_match = match['nextmatch']
-                    next_match_id = int(next_match.split(":")[0])
-                    for new_match in matches:
-                        if new_match["uniqueId"] == next_match_id:
-                            team = "team1" if "A" in next_match else "team2"
-                            new_match[team] = match[winner]
+                results = match["score"].split(":")
+                winner = "team1" if int(results[0]) > int(results[1]) else "team2"
+                next_match = match['nextmatch']
+                next_match_id = int(next_match.split(":")[0])
+                for new_match in matches:
+                    if new_match["uniqueId"] == next_match_id:
+                        team = "team1" if "A" in next_match else "team2"
+                        new_match[team] = match[winner]
+                        if not match["over"]:
+                            new_match[team] = ""
+
     with open(f"teams/{sport}_playoff.json", "w") as file:
         json.dump(data, file, ensure_ascii=False)
 
@@ -250,7 +253,7 @@ def update_playoff_match(sport, match_id, match_data):
                 winner = 1 if score_team1 > score_team2 else 2
                 if int(results[0]) == int(results[1]):
                     winner = 0 
-                match["over"] = winner
+                match["over"] = match_data["over"]
     with open(f"teams/{sport}_playoff.json", "w") as file:
         json.dump(matches_data, file, ensure_ascii=False)
     if match_data["level"] != matches_data["levels"] - 1:
@@ -269,12 +272,11 @@ def update_playoff_match(sport, match_id, match_data):
                 thirds.append(third)
         for third in thirds:
             teams["Teams"].append(dict(Players=third, rank=3)) 
-        with open(f"teams/{file_name}", "w") as file:
+        with open(f"results/sports/{file_name}", "w") as file:
             json.dump(teams, file, ensure_ascii=False)
 
 
 def update_poules_match(sport, match_id, match_data):
-    score_team1, score_team2 = retrieve_score(match_data)
     with open(f"teams/{sport}_poules.json", "r") as file:
         matches_data = json.load(file)
         for poule in matches_data["groups"]:
@@ -282,10 +284,7 @@ def update_poules_match(sport, match_id, match_data):
                 for match in poule["matches"]:
                     if match_id == match["uniqueId"] and not match["over"]:
                         match["score"] = match_data["score"]
-                        winner = 1 if score_team1 > score_team2 else 2
-                        if score_team1 == score_team2:
-                            winner = 0 
-                        match["over"] = winner
+                        match["over"] = match_data["over"]
                         poule = compute_points(poule)
     with open(f"teams/{sport}_poules.json", "w") as file:
         json.dump(matches_data, file, ensure_ascii=False)
@@ -324,8 +323,14 @@ def update_poules_match(sport, match_id, match_data):
                     teams["Teams"].append(dict(Players=get_n_th(poule, 2)["name"], rank=2))
                     teams["Teams"].append(dict(Players=get_n_th(poule, 3)["name"], rank=3))
                 file_name = f"{sport}_summary.json"
-                with open(f"teams/{file_name}", "w") as file:
+                with open(f"results/sports/{file_name}", "w") as file:
                     json.dump(teams, file, ensure_ascii=False)
+        else:
+            with open(f"teams/{sport}_status.json", "r") as file:
+                data = json.load(file)
+            data["status"] = "poules"
+            with open(f"teams/{sport}_status.json", "w") as file:
+                json.dump(data, file)
 
 
 def get_n_th(poule, n):
@@ -405,19 +410,29 @@ def update_list(sport, data):
     with open(f"teams/{sport}.json", "r") as file:
         matches_data = json.load(file)
         for player_data in data:
-            player_id = player_data["uniqueId"]
-            for player in matches_data["Teams"]:
-                if player_id == player["uniqueid"]:
+            level = player_data["level"]
+            player_name = player_data["username"]
+            serie = matches_data["Series"][level]
+            for player in serie["Teams"]:
+                if player_name == player["Players"]:
                     player["rank"] = player_data["rank"]
-                    player["score"] = player_data["score"]
+                    if "score" in player_data:
+                        player["score"] = player_data["score"]
+                if player["rank"] and player["rank"] <= serie["Selected"]:
+                    next = serie["NextSerie"]
+                    if not next == -1:
+                        if not any(team["Players"] == player["Players"] for team in matches_data["Series"][next]["Teams"]):
+                            matches_data["Series"][next]["Teams"].append(dict(Players=player["Players"], rank=0))
+                        print(matches_data["Series"][next]["Teams"])
+
     with open(f"teams/{sport}.json", "w") as file:
         json.dump(matches_data, file, ensure_ascii=False)
     teams=dict(Teams=[])
-    for team in matches_data["Teams"]:
+    for team in matches_data["Series"][0]["Teams"]:
         if team["rank"]:
             teams["Teams"].append(team)
     file_name = f"{sport}_summary.json"
-    with open(f"teams/{file_name}", "w") as file:
+    with open(f"results/sports/{file_name}", "w") as file:
         json.dump(teams, file, ensure_ascii=False)
     
 
@@ -433,3 +448,70 @@ def fix_json():
             file_handler = open(os.path.join("/home/JO/JO_server/teams", filename), "a")
             file_handler.write("\n\n\n\n")
             file_handler.close()
+
+
+def players_list():
+    return ['Gazou', 'Mathieu', 'Carol-Ann', 'Beranger', 'Remi', 'Guibra', 'Girex', 'Johan', 'Micka', 'Chris', 'La Guille', 'Max', 'Mathias', 'Shmave', 'Lapinou', 'Lucas', 'Boolbi', 'Ugo', 'Hugo', 'Jose', 'Prompsaud', 'Thomas', 'Brice', 'Antoine', 'Emma', 'Ines', 'Sam', 'Willy', 'Babouche', 'Armand', 'Jolan', 'Florent', 'Florian', 'Quentin', 'Chloe', 'Charlene', 'Pierrick', 'Patrice', 'Mimo', 'Mich']
+
+
+def get_results(athlete):
+    results = dict(nr1=[], nr2=[], nr3=[])
+    for filename in os.listdir("results/sports/"):
+        print(filename)
+        if "_summary.json" in filename:
+            sport = filename.replace("_summary.json", "")
+            with open(f"results/sports/{filename}", "r") as file:
+                sport_results = json.load(file)
+                for team in sport_results["Teams"]:
+                    if athlete in team["Players"]:
+                        rank = team["rank"]
+                        results[f"nr{rank}"].append(sport)
+    return results
+
+
+def update_results(athlete):
+    results = get_results(athlete)
+    gold_medals = len(results["nr1"])
+    silver_medals = len(results["nr2"])
+    bronze_medals = len(results["nr3"])
+    points = bronze_medals + 20 * silver_medals + 400 * gold_medals
+    final_results = dict(
+        gold_medals=dict(number=gold_medals, sports=results["nr1"]),
+        silver_medals=dict(number=silver_medals, sports=results["nr2"]),
+        bronze_medals=dict(number=bronze_medals, sports=results["nr3"]),
+        points=points)
+    with open(f"results/athletes/{athlete}.json", "w") as file:
+        json.dump(final_results, file)
+    return final_results
+
+
+def update_global_results():
+    results = []
+    for athlete in players_list():
+        result = update_results(athlete)
+        result["name"] = athlete
+        results.append(result)
+        print(result)
+    results = sorted(results, key = lambda i: i['points'])
+    results.reverse()
+    rank = 0
+    score = 1000000  # vous voyez ce que ça fait déjà 1 million Larmina ?
+    inc = 1
+    final_results = []
+    for result in results:
+        if result["points"] < score:
+            score = result["points"]
+            rank += inc
+            inc = 1
+        else:
+            inc += 1
+        res = dict(
+            rank=rank,
+            name=result["name"],
+            gold=result["gold_medals"]["number"],
+            silver=result["silver_medals"]["number"],
+            bronze=result["bronze_medals"]["number"])
+        final_results.append(res)
+        
+    with open(f"results/global.json", "w") as file:
+        json.dump(final_results, file)
