@@ -418,12 +418,24 @@ def update_list(sport, data):
                     player["rank"] = player_data["rank"]
                     if "score" in player_data:
                         player["score"] = player_data["score"]
-                if player["rank"] and player["rank"] <= serie["Selected"]:
-                    next = serie["NextSerie"]
-                    if not next == -1:
-                        if not any(team["Players"] == player["Players"] for team in matches_data["Series"][next]["Teams"]):
-                            matches_data["Series"][next]["Teams"].append(dict(Players=player["Players"], rank=0))
-                        print(matches_data["Series"][next]["Teams"])
+        if len(matches_data["Series"]) > 1:
+            if all(serie_is_over(serie) for serie in matches_data["Series"][1:]):
+                matches_data["Series"][0]["Teams"] = []
+                for player_data in data:
+                    level = player_data["level"]
+                    serie = matches_data["Series"][level]
+                    for player in serie["Teams"]:
+                        if player["rank"] and player["rank"] <= serie["Selected"]:
+                            next = serie["NextSerie"]
+                            if not next == -1:
+                                if not any(team["Players"] == player["Players"] for team in matches_data["Series"][next]["Teams"]):
+                                    matches_data["Series"][next]["Teams"].append(dict(Players=player["Players"], rank=0))
+                                print(matches_data["Series"][next]["Teams"])
+            else:
+                matches_data["Series"][0]["Teams"] = []
+                for _ in range(4):
+                    matches_data["Series"][0]["Teams"].append(dict(Players="", rank=0))
+
 
     with open(f"teams/{sport}.json", "w") as file:
         json.dump(matches_data, file, ensure_ascii=False)
@@ -434,7 +446,18 @@ def update_list(sport, data):
     file_name = f"{sport}_summary.json"
     with open(f"results/sports/{file_name}", "w") as file:
         json.dump(teams, file, ensure_ascii=False)
-    
+
+
+def serie_is_over(serie):
+    selected = serie["Selected"]
+    if selected:
+        for rank in range(selected):
+            if all(team["rank"] != rank for team in serie["Teams"]):
+                return False
+            else:
+                print(f"Serie has n°{rank}")
+        return True
+    return False
 
 def log(sport, username, data):
     with open(f"logs/{sport}.log", "a") as file:
@@ -480,8 +503,6 @@ def update_results(athlete):
         silver_medals=dict(number=silver_medals, sports=results["nr2"]),
         bronze_medals=dict(number=bronze_medals, sports=results["nr3"]),
         points=points)
-    with open(f"results/athletes/{athlete}.json", "w") as file:
-        json.dump(final_results, file)
     return final_results
 
 
@@ -508,9 +529,9 @@ def update_global_results():
         res = dict(
             rank=rank,
             name=result["name"],
-            gold=result["gold_medals"]["number"],
-            silver=result["silver_medals"]["number"],
-            bronze=result["bronze_medals"]["number"])
+            gold=result["gold_medals"],
+            silver=result["silver_medals"],
+            bronze=result["bronze_medals"])
         final_results.append(res)
         
     with open(f"results/global.json", "w") as file:
