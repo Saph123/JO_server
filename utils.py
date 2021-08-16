@@ -282,7 +282,7 @@ def update_poules_match(sport, match_id, match_data):
         for poule in matches_data["groups"]:
             if poule["name"] == match_data["poulename"]:
                 for match in poule["matches"]:
-                    if match_id == match["uniqueId"] and not match["over"]:
+                    if match_id == match["uniqueId"]:
                         match["score"] = match_data["score"]
                         match["over"] = match_data["over"]
                         poule = compute_points(poule)
@@ -379,6 +379,8 @@ def compute_points(poule):
         team["played"] = 0
         team["points"] = 0
     for match in poule["matches"]:
+        if not match["over"]:
+            continue
         score_team1, score_team2 = retrieve_score(match)
         if score_team1 or score_team2:
             diff = score_team1 - score_team2
