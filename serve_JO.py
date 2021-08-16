@@ -10,6 +10,7 @@ import time
 import json
 import hashlib
 from utils import fix_json, update_playoff_match, user_is_authorized, update_list, update_poules_match, log, fix_json
+from utils import update_global_results
 root_dir = os.path.dirname(os.path.realpath(__file__))
 
 try:
@@ -101,6 +102,7 @@ class myHandler (BaseHTTPRequestHandler):
                     update_poules_match(sport, match_id, match)
                 elif type == "liste":
                     update_list(sport, match)
+            update_global_results()
             fix_json()
             log(sport, username, data)
         return

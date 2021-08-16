@@ -1,13 +1,9 @@
 {
-    "status":"poules",
-    "sportname":"Dodgeball",
-    "states":["poules", "playoff"],
-    "arbitre":["Hugo", "Florian Jehannault"]
+    "status":"playoff",
+    "sportname":"Molky",
+    "states":["playoff"],
+    "arbitre":["Willy"]
 }
-
-
-
-
 
 
 
