@@ -58,7 +58,7 @@ class myHandler (BaseHTTPRequestHandler):
         post_data = self.rfile.read(int(content_length)) # <--- Gets the data itself
         print (self.path)
         #json.loads(post_data.decode('utf-8')).get("version")
-        if 1 == 1: ## replace here once apk is ready!
+        if json.loads(post_data.decode('utf-8')).get("version") == 1: ## replace here once apk is ready!
             if "login" in self.path:
                 tmpdict = simplejson.loads("{"+str(post_data).split("{")[1].split("}")[0]+"}")
                 username = tmpdict.get("username")
