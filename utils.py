@@ -538,3 +538,24 @@ def update_global_results():
         
     with open(f"results/global.json", "w") as file:
         json.dump(final_results, file)
+
+
+def generate_event_list(name):
+    arbitre_list = []
+    playing_list = []
+    parse_json(name, "_status.json", arbitre_list)
+    parse_json(name, "_playoff.json", playing_list)
+    parse_json(name, "_poules.json", playing_list)
+    parse_json(name, ".json", playing_list, exclude="_")
+    print(arbitre_list)
+    print(playing_list)
+    with open(f"athletes/{name}.json", "w") as athlete_file:
+        json.dump(dict(arbitre=arbitre_list, activities=playing_list), athlete_file)
+
+def parse_json(name_searched, suffix, list_to_append, exclude=None):
+    for filename in os.listdir("teams/"):
+        if suffix in filename:
+            if exclude is None or not exclude in filename:
+                with open(f"teams/{filename}", "r") as file:
+                    if name_searched in file.read():
+                        list_to_append.append(filename.split(suffix)[0])
