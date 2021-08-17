@@ -479,6 +479,19 @@ def players_list():
     return ['Gazou', 'Mathieu', 'Carol-Ann', 'Beranger', 'Remi', 'Guibra', 'Girex', 'Johan', 'Micka', 'Chris', 'La Guille', 'Max', 'Mathias', 'Shmave', 'Lapinou', 'Lucas', 'Boolbi', 'Ugo', 'Hugo', 'Jose', 'Prompsaud', 'Thomas', 'Brice', 'Antoine', 'Emma', 'Ines', 'Sam', 'Willy', 'Babouche', 'Armand', 'Jolan', 'Florent', 'Florian', 'Quentin', 'Chloe', 'Charlene', 'Pierrick', 'Patrice', 'Mimo', 'Mich']
 
 
+def activities_list():
+    return ["Trail", "Dodgeball", "Pizza", "Tong", "Babyfoot", "Flechette", "PingPong", "Orientation", "Beerpong", "Volley", "Waterpolo", "Larmina", "Natation", "SpikeBall", "Ventriglisse", "100mRicard", "Petanque", "Molky"]
+
+
+
+def sort_list(list):
+    new_list = []
+    for activity in activities_list():
+        if activity in list:
+            new_list.append(activity)
+    return new_list
+
+
 def get_results(athlete):
     results = dict(nr1=[], nr2=[], nr3=[])
     for filename in os.listdir("results/sports/"):
@@ -547,10 +560,13 @@ def generate_event_list(name):
     parse_json(name, "_playoff.json", playing_list)
     parse_json(name, "_poules.json", playing_list)
     parse_json(name, ".json", playing_list, exclude="_")
+    arbitre_list = sort_list(arbitre_list)
+    playing_list = sort_list(playing_list)
     print(arbitre_list)
     print(playing_list)
     with open(f"athletes/{name}.json", "w") as athlete_file:
         json.dump(dict(arbitre=arbitre_list, activities=playing_list), athlete_file)
+
 
 def parse_json(name_searched, suffix, list_to_append, exclude=None):
     for filename in os.listdir("teams/"):
