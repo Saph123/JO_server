@@ -162,6 +162,7 @@ class myHandler (BaseHTTPRequestHandler):
                         full_txt = open("tokens.txt", "r").read()
                         open("tokens.txt", "w").write(full_txt.replace(token, ""))
                 open("lasttimecluedo", "w").write(str(time.time()))
+                log("Cluedo", username, "")
             else:
                 print("ignore as it's less than 5 mins since last")
       
