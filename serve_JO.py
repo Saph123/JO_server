@@ -151,8 +151,8 @@ class myHandler (BaseHTTPRequestHandler):
                 if os.path.exists("lasttimecluedo"):
                     last_time = float(open("lasttimecluedo", "r").read())
                 else:
-                    last_time = time.time() - 6 * 60
-                if time.time() > (last_time + 5 * 60): # filter 5 mins
+                    last_time = time.time() - 16 * 60
+                if time.time() > (last_time + 15 * 60): # filter 5 mins
                     print("cluedotime")
                     tokens = open("tokens.txt", "r").readlines()
                     for token in tokens:
