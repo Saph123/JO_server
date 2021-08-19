@@ -8,13 +8,13 @@ import socket
 from requests.api import head
 import mariadb
 import simplejson
-import time    
+import time
 import json
 import hashlib
 import requests
 import re
 from utils import fix_json, update_playoff_match, user_is_authorized, update_list, update_poules_match, log, fix_json
-from utils import update_global_results
+from utils import update_global_results, generate_pizza_results, calculate_rank_clicker
 
 
 root_dir = os.path.dirname(os.path.realpath(__file__))
@@ -48,9 +48,11 @@ class myHandler (BaseHTTPRequestHandler):
             with open(path, 'rb') as file:
                 # Send the html message
                 self.wfile.write(file.read())
+        
         else:
             print(f"Error: No such file or directory: {path}")
-            self.wfile.write("")
+            self.send_response(404)
+            # self.wfile.write("")
         return
 
     def do_POST(self):
@@ -65,7 +67,7 @@ class myHandler (BaseHTTPRequestHandler):
                 password = hashlib.sha384(tmpdict.get("password").encode('utf-8')).hexdigest()
                 cur.execute("SELECT * from users")
                 for (id,user,pwd,autho,date) in cur:
-                    if user.lower()==username.lower():
+                    if user==username:
                         if password==pwd:
                             self.send_response(200,"sucessfull login")
                             self.send_header("Access-Control-Allow-Origin","*")
@@ -73,7 +75,18 @@ class myHandler (BaseHTTPRequestHandler):
                             return
                             
                 self.send_response(403,"fdp")
-                
+            elif "clicker" in self.path:
+                username = json.loads(post_data.decode('utf-8')).get("username")
+                count = json.loads(post_data.decode('utf-8')).get("count")
+                print(count)
+                clicker = json.load(open(f"teams/Clicker.json", "r"))
+                for player in clicker:
+                    if player["Players"] == username:
+                        print("found in json")
+                        player["Clicks"] = count
+                        break
+                calculate_rank_clicker(clicker, username)
+                self.send_response(200, "fdp")
             elif "register" in self.path:
                 # print(post_data.get("username"))
                 tmpdict = simplejson.loads("{"+str(post_data).split("{")[1].split("}")[0]+"}")
@@ -99,17 +112,22 @@ class myHandler (BaseHTTPRequestHandler):
                 print(data)
                 username = data["username"]
                 sport = data["sport"]
-                if user_is_authorized(username, sport):
-                    match = data["match"]
-                    type = data["type"]
-                    if type == "playoff":
-                        match_id = int(data["match"]["uniqueId"])
-                        update_playoff_match(sport, match_id, match)
-                    elif type == "poules":
-                        match_id = int(data["match"]["uniqueId"])
-                        update_poules_match(sport, match_id, match)
-                    elif type == "liste":
-                        update_list(sport, match)
+                if sport == "Pizza":
+                    update_list(f"{sport}/{username}", data["match"])
+                    generate_pizza_results()
+                else:
+                    if user_is_authorized(username, sport):
+                        match = data["match"]
+                        type = data["type"]
+                        if type == "playoff":
+                            match_id = int(data["match"]["uniqueId"])
+                            update_playoff_match(sport, match_id, match)
+                        elif type == "poules":
+                            match_id = int(data["match"]["uniqueId"])
+                            update_poules_match(sport, match_id, match)
+                        elif type == "liste":
+                            update_list(sport, match)
+                        
                 update_global_results()
                 fix_json()
                 log(sport, username, data)
@@ -146,6 +164,7 @@ class myHandler (BaseHTTPRequestHandler):
 
                 self.send_response(200,"fdp")
             elif "cluedo" in self.path:
+                self.send_response(200,"fdp")
                 username = json.loads(post_data.decode('utf-8')).get("cluedo")
                 print(username)
                 if os.path.exists("lasttimecluedo"):
@@ -166,7 +185,7 @@ class myHandler (BaseHTTPRequestHandler):
                     open("lasttimecluedo", "w").write(str(time.time()))
                     log("Cluedo", username, "")
                 else:
-                    print("ignore as it's less than 5 mins since last")
+                    print("ignore as it's less than 15 mins since last")
 
             elif "pushnotif" in self.path:
                 pushnotif = json.loads(post_data.decode('utf-8'))
