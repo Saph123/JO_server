@@ -1,4 +1,5 @@
 
+import requests
 import copy
 import os
 import datetime
@@ -441,6 +442,8 @@ def update_list(sport, data):
 
     with open(f"teams/{sport}.json", "w") as file:
         json.dump(matches_data, file, ensure_ascii=False)
+    if "Pizza" in sport:
+        return
     teams=dict(Teams=[])
     for team in matches_data["Series"][0]["Teams"]:
         if team["rank"]:
@@ -448,6 +451,34 @@ def update_list(sport, data):
     file_name = f"{sport}_summary.json"
     with open(f"results/sports/{file_name}", "w") as file:
         json.dump(teams, file, ensure_ascii=False)
+
+
+def generate_pizza_results():
+    players_score = []
+    for player in players_list():
+        players_score.append(dict(Players=player, score=0))
+    for judge in players_list():
+        with open(f"teams/Pizza/{judge}.json", "r") as pizz_file:
+            for team in json.load(pizz_file)["Series"][0]["Teams"]:
+                if team["rank"] == 1:
+                    for someone in players_score:
+                        if someone["Players"] in team["Players"]:
+                            someone["score"] += 1
+    players_score = sorted(players_score, key = lambda i: i['score'])
+    players_score.reverse()
+    max_score = players_score[0]["score"]
+    rank = 1
+    for player in players_score:
+        if player["score"] == max_score:
+            player["rank"] = rank
+        else:
+            max_score = player["score"]
+            rank += 1
+            if rank == 4:
+                break
+            player["rank"] = rank
+    with open(f"results/sports/Pizza_summary.json", "w") as file:
+        json.dump(dict(Teams=players_score), file, ensure_ascii=False)
 
 
 def serie_is_over(serie):
@@ -479,7 +510,31 @@ def players_list():
     return ['Gazou', 'Mathieu', 'Carol-Ann', 'Beranger', 'Remi', 'Guibra', 'Girex', 'Johan', 'Micka', 'Chris', 'La Guille', 'Max', 'Mathias', 'Shmave', 'Lapinou', 'Lucas', 'Boolbi', 'Ugo', 'Hugo', 'Jose', 'Prompsaud', 'Thomas', 'Brice', 'Antoine', 'Emma', 'Ines', 'Sam', 'Willy', 'Babouche', 'Armand', 'Jolan', 'Florent', 'Florian', 'Quentin', 'Chloe', 'Charlene', 'Pierrick', 'Patrice', 'Mimo', 'Mich']
 
 
-def activities_list():
+def activities_list(include_date=False):
+    if include_date:
+        return {
+    "Soirée d'ouverture!":["2021-08-26T20:00:00", "2021-08-27T09:30:00"],
+    "Trail":["2021-08-27T09:30:00", "2021-08-27T11:00:00"],
+    "Dodgeball":["2021-08-27T11:00:00", "2021-08-27T13:00:00"],
+    "Pizza":["2021-08-27T13:00:00", "2021-08-27T15:00:00"],
+    "Tong":["2021-08-27T15:00:00", "2021-08-27T18:00:00"],
+    "Babyfoot":["2021-08-27T15:00:00", "2021-08-27T18:00:00"],
+    "Flechette":["2021-08-27T15:00:00", "2021-08-27T18:00:00"],
+    "PingPong":["2021-08-27T15:00:00", "2021-08-27T18:00:00"],
+    "Orientation":["2021-08-27T18:00:00", "2021-08-27T19:00:00"],
+    "Beerpong":["2021-08-27T19:00:00", "2021-08-28T00:00:00"],
+    "Volley":["2021-08-28T10:00:00", "2021-08-28T13:00:00"],
+    "Waterpolo":["2021-08-28T14:00:00", "2021-08-28T15:00:00"],
+    "Larmina":["2021-08-28T14:00:00", "2021-08-28T15:00:00"],
+    "Natation":["2021-08-28T15:00:00", "2021-08-28T17:30:00"],
+    "SpikeBall":["2021-08-28T15:00:00", "2021-08-28T17:30:00"],
+    "Ventriglisse":["2021-08-28T17:30:00", "2021-08-28T19:00:00"],
+    "100mRicard":["2021-08-28T19:00:00", "2021-08-29T04:00:00"],
+    "Petanque":["2021-08-29T11:00:00", "2021-08-29T13:00:00"],
+    "Molky":["2021-08-29T11:00:00", "2021-08-29T13:00:00"],
+    "Rangement":["2021-08-29T14:00:00", "2021-08-29T15:30:00"],
+    "Remiseprix":["2021-08-29T15:30:00", "2021-08-29T17:30:00"]
+    }
     return ["Trail", "Dodgeball", "Pizza", "Tong", "Babyfoot", "Flechette", "PingPong", "Orientation", "Beerpong", "Volley", "Waterpolo", "Larmina", "Natation", "SpikeBall", "Ventriglisse", "100mRicard", "Petanque", "Molky"]
 
 
@@ -575,3 +630,55 @@ def parse_json(name_searched, suffix, list_to_append, exclude=None):
                 with open(f"teams/{filename}", "r") as file:
                     if name_searched in file.read():
                         list_to_append.append(filename.split(suffix)[0])
+
+def calculate_rank_clicker(clicker, username):
+    for player in clicker:
+        if player.get("Players") == username:
+            previous_rank = player.get("rank")
+            break
+    
+    
+    clicker_new = sorted(clicker, key = lambda i: i['Clicks'])
+    clicker_new.reverse()
+
+    rank = 0
+    score = 1000000 * 1000000  # Assez bien oui!
+    inc = 1
+    final_results = []
+    for result in clicker_new:
+        if result["Clicks"] < score:
+            score = result["Clicks"]
+            rank += inc
+            inc = 1
+        else:
+            inc += 1
+        res = dict(
+            rank=rank,
+            Players=result["Players"],
+            Clicks=result["Clicks"])
+        final_results.append(res)
+    for player in final_results:
+        if player.get("Players") == username:
+            new_rank = player.get("rank")
+            break
+    if previous_rank == new_rank:
+        final_results = clicker
+    with open(f"teams/Clicker.json", "w") as file:
+        json.dump(final_results, file)
+
+
+def send_notif(to, title, body):
+    with open("tokens.txt", "r") as tokens_file:
+        tokens = tokens_file.readlines()
+    print(tokens)
+    if not to == "all":
+        for token in tokens:
+            if to in token:
+                tokens = [token]
+                break
+    print(tokens)
+    for token in tokens:
+        if "ExponentPushToken" in token:
+            data = {"to": token.split(":")[0], "title":title, "body":body}
+            print(data)
+            req = requests.post("https://exp.host/--/api/v2/push/send", data = data)
