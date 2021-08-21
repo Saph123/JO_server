@@ -422,22 +422,21 @@ def update_list(sport, data):
                     if "score" in player_data:
                         player["score"] = player_data["score"]
         if len(matches_data["Series"]) > 1:
-            if all(serie_is_over(serie) for serie in matches_data["Series"][1:]):
-                matches_data["Series"][0]["Teams"] = []
-                for player_data in data:
-                    level = player_data["level"]
-                    serie = matches_data["Series"][level]
-                    for player in serie["Teams"]:
-                        if player["rank"] and player["rank"] <= serie["Selected"]:
-                            next = serie["NextSerie"]
-                            if not next == -1:
-                                if not any(team["Players"] == player["Players"] for team in matches_data["Series"][next]["Teams"]):
-                                    matches_data["Series"][next]["Teams"].append(dict(Players=player["Players"], rank=0))
-                                print(matches_data["Series"][next]["Teams"])
-            else:
+            if not all(serie_is_over(serie) for serie in matches_data["Series"][1:]):
                 matches_data["Series"][0]["Teams"] = []
                 for _ in range(4):
                     matches_data["Series"][0]["Teams"].append(dict(Players="", rank=0))
+            elif not serie_is_over(matches_data["Series"][0]):
+                matches_data["Series"][0]["Teams"] = []
+                for serie in matches_data["Series"][1:]:
+                    for player_data in serie:
+                        for player in serie["Teams"]:
+                            if player["rank"] and player["rank"] <= serie["Selected"]:
+                                next = serie["NextSerie"]
+                                if not next == -1:
+                                    if not any(team["Players"] == player["Players"] for team in matches_data["Series"][next]["Teams"]):
+                                        matches_data["Series"][next]["Teams"].append(dict(Players=player["Players"], rank=0))
+                                    print(matches_data["Series"][next]["Teams"])
 
 
     with open(f"teams/{sport}.json", "w") as file:
@@ -632,10 +631,7 @@ def parse_json(name_searched, suffix, list_to_append, exclude=None):
                         list_to_append.append(filename.split(suffix)[0])
 
 def calculate_rank_clicker(clicker, username):
-    for player in clicker:
-        if player.get("Players") == username:
-            previous_rank = player.get("rank")
-            break
+
     
     
     clicker_new = sorted(clicker, key = lambda i: i['Clicks'])
@@ -657,11 +653,16 @@ def calculate_rank_clicker(clicker, username):
             Players=result["Players"],
             Clicks=result["Clicks"])
         final_results.append(res)
+    dont_update_ranks = True
     for player in final_results:
-        if player.get("Players") == username:
-            new_rank = player.get("rank")
-            break
-    if previous_rank == new_rank:
+        for initplayer in clicker:
+            if player.get('Players') == initplayer.get('Players'):
+                if player.get("rank") != initplayer.get('rank'):
+                    dont_update_ranks = False
+                    break
+                continue
+    if dont_update_ranks:
+        print("don'tupdate")
         final_results = clicker
     with open(f"teams/Clicker.json", "w") as file:
         json.dump(final_results, file)
@@ -682,3 +683,27 @@ def send_notif(to, title, body):
             data = {"to": token.split(":")[0], "title":title, "body":body}
             print(data)
             req = requests.post("https://exp.host/--/api/v2/push/send", data = data)
+
+
+
+def rm_players_from_his_pizza_list():
+    for player in players_list():
+        overwrite = False
+        with open(f"teams/Pizza/{player}.json", "r") as rfile:
+            print(player)
+            teams = json.load(rfile)["Series"][0]["Teams"]
+            for team in teams:
+                if player in team["Players"]:
+                    teams.remove(team)
+                    overwrite = True
+                    break
+        if overwrite:
+            with open(f"teams/Pizza/{player}.json", "w") as wfile:
+                aaa = dict(Series=[dict(Name="Final", Teams=teams, Selected=0, NextSerie="")])
+                json.dump(aaa, wfile)
+
+
+def trigger_tas_dhommes(match, username):
+    for result in match:
+        if username in result["username"] and result["rank"] == 1:
+            send_notif("all", "Tas d'hommes!", f"Sur {username}\nPour avoir voté pour sa propre pizza")
