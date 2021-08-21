@@ -14,7 +14,7 @@ import hashlib
 import requests
 import re
 from utils import fix_json, update_playoff_match, user_is_authorized, update_list, update_poules_match, log, fix_json
-from utils import update_global_results, generate_pizza_results, calculate_rank_clicker
+from utils import update_global_results, generate_pizza_results, calculate_rank_clicker, trigger_tas_dhommes, send_notif
 
 
 root_dir = os.path.dirname(os.path.realpath(__file__))
@@ -83,7 +83,14 @@ class myHandler (BaseHTTPRequestHandler):
                 for player in clicker:
                     if player["Players"] == username:
                         print("found in json")
-                        player["Clicks"] = count
+                        vitesse = (count -player['Clicks'])/3
+                        print("vitesse:", vitesse)
+                        if(vitesse > 20):
+                            print("tricheur:", username)
+                            send_notif("Max", "Tas d'hommes!", f"Sur {username}, pour être un fdp et avoir triché au clicker!")
+                            player["Clicks"] = 0
+                        else:
+                            player["Clicks"] = count
                         break
                 calculate_rank_clicker(clicker, username)
                 self.send_response(200, "fdp")
@@ -113,6 +120,7 @@ class myHandler (BaseHTTPRequestHandler):
                 username = data["username"]
                 sport = data["sport"]
                 if sport == "Pizza":
+                    trigger_tas_dhommes(data["match"], username)
                     update_list(f"{sport}/{username}", data["match"])
                     generate_pizza_results()
                 else:
@@ -193,6 +201,7 @@ class myHandler (BaseHTTPRequestHandler):
                 title = pushnotif.get("title")
                 body = pushnotif.get("body")
                 print(pushnotif)
+                
                 tokens = open("tokens.txt", "r").readlines()
                 if pushnotif.get("to") == "all":
                     print("pushing to all!")
@@ -209,6 +218,7 @@ class myHandler (BaseHTTPRequestHandler):
                             if "ExponentPushToken" in token:
                                 data = {"to": token.split(":")[0].replace(":",""), "title":title, "body":body}
                                 req = requests.post("https://exp.host/--/api/v2/push/send", data = data)
+                self.send_response(200, "OK")
         else:
             log("Tricheur", "unkown", post_data.decode('utf-8'))
             self.send_response(403, "tricheur")
